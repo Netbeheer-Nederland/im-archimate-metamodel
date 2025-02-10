@@ -2,7 +2,7 @@
 :toclevels: 4
 
 
-+++A model is a collection of ``Concept``s.+++
++++A model is a collection of Concepts.+++
 
 
 [cols="h,3",width=65%]

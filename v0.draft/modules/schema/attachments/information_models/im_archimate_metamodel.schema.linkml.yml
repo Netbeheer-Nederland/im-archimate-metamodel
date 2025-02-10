@@ -37,13 +37,13 @@ classes:
   Model:
     class_uri: this:Model
     abstract: true
-    description: A model is a collection of ``Concept``s.
+    description: A model is a collection of Concepts.
 
   LFEnergyModel:
     class_uri: this:LFEnergyModel
     is_a: Model
     tree_root: true
-    description: Instance of the LFEnergy ``Functional Architecture``
+    description: Instance of the LFEnergy Functional Architecture
       metamodel.
     attributes:
       identifier:
@@ -67,140 +67,140 @@ classes:
         multivalued: false
         required: true
       groupings:
-        description: All instances of Grouping-s
+        description: All instances of Groupings
         slot_uri: this:LFEnergyModel.groupings
         multivalued: true
         range: Grouping
         required: true
         inlined_as_list: true
       capabilities:
-        description: All instances of Capability-s
+        description: All instances of Capabilities
         slot_uri: this:LFEnergyModel.capabilities
         multivalued: true
         range: Capability
         required: true
         inlined_as_list: true
       business_actors:
-        description: All instances of BusinessActor-s
+        description: All instances of BusinessActors
         slot_uri: this:LFEnergyModel.businessActors
         multivalued: true
         range: BusinessActor
         required: true
         inlined_as_list: true
       business_roles:
-        description: All instances of BusinessRole-s
+        description: All instances of BusinessRoles
         slot_uri: this:LFEnergyModel.businessRoles
         multivalued: true
         range: BusinessRole
         required: true
         inlined_as_list: true
       business_functions:
-        description: All instances of BusinessFunction-s
+        description: All instances of BusinessFunctions
         slot_uri: this:LFEnergyModel.businessFunctions
         multivalued: true
         range: BusinessFunction
         required: true
         inlined_as_list: true
       business_processes:
-        description: All instances of BusinessProcess-s
+        description: All instances of BusinessProcesss
         slot_uri: this:LFEnergyModel.businessProcesses
         multivalued: true
         range: BusinessProcess
         required: true
         inlined_as_list: true
       business_objects:
-        description: All instances of BusinessObject-s
+        description: All instances of BusinessObjects
         slot_uri: this:LFEnergyModel.businessObjects
         multivalued: true
         range: BusinessObject
         required: true
         inlined_as_list: true
       application_services:
-        description: All instances of ApplicationService-s
+        description: All instances of ApplicationServices
         slot_uri: this:LFEnergyModel.applicationServices
         multivalued: true
         range: ApplicationService
         required: true
         inlined_as_list: true
       application_functions:
-        description: All instances of ApplicationFunction-s
+        description: All instances of ApplicationFunctions
         slot_uri: this:LFEnergyModel.applicationFunctions
         multivalued: true
         range: ApplicationFunction
         required: true
         inlined_as_list: true
       application_components:
-        description: All instances of ApplicationComponent-s
+        description: All instances of ApplicationComponents
         slot_uri: this:LFEnergyModel.applicationComponents
         multivalued: true
         range: ApplicationComponent
         required: true
         inlined_as_list: true
       data_objects:
-        description: All instances of DataObject-s
+        description: All instances of DataObjects
         slot_uri: this:LFEnergyModel.dataObjects
         multivalued: true
         range: DataObject
         required: true
         inlined_as_list: true
       technology_collaborations:
-        description: All instances of TechnologyCollaboration-s
+        description: All instances of TechnologyCollaborations
         slot_uri: this:LFEnergyModel.technologyCollaborations
         multivalued: true
         range: TechnologyCollaboration
         required: true
         inlined_as_list: true
       nodes:
-        description: All instances of Node-s
+        description: All instances of Nodes
         slot_uri: this:LFEnergyModel.nodes
         multivalued: true
         range: Node
         required: true
         inlined_as_list: true
       realization_relationships:
-        description: All instances of RealizationRelationship-s
+        description: All instances of RealizationRelationships
         slot_uri: this:LFEnergyModel.realizationRelationships
         multivalued: true
         range: RealizationRelationship
         required: true
         inlined_as_list: true
       assignment_relationships:
-        description: All instances of AssignmentRelationship-s
+        description: All instances of AssignmentRelationships
         slot_uri: this:LFEnergyModel.assignmentRelationships
         multivalued: true
         range: AssignmentRelationship
         required: true
         inlined_as_list: true
       access_relationships:
-        description: All instances of AccessRelationship-s
+        description: All instances of AccessRelationships
         slot_uri: this:LFEnergyModel.accessRelationships
         multivalued: true
         range: AccessRelationship
         required: true
         inlined_as_list: true
       serving_relationships:
-        description: All instances of ServingRelationship-s
+        description: All instances of ServingRelationships
         slot_uri: this:LFEnergyModel.servingRelationships
         multivalued: true
         range: ServingRelationship
         required: true
         inlined_as_list: true
       association_relationships:
-        description: All instances of AssociationRelationship-s
+        description: All instances of AssociationRelationships
         slot_uri: this:LFEnergyModel.associationRelationships
         multivalued: true
         range: AssociationRelationship
         required: true
         inlined_as_list: true
       composition_relationships:
-        description: All instances of CompositionRelationship-s
+        description: All instances of CompositionRelationships
         slot_uri: this:LFEnergyModel.compositionRelationships
         multivalued: true
         range: CompositionRelationship
         required: true
         inlined_as_list: true
       aggregation_relationships:
-        description: All instances of AggregationRelationship-s
+        description: All instances of AggregationRelationships
         slot_uri: this:LFEnergyModel.aggregationRelationships
         multivalued: true
         range: AggregationRelationship
@@ -217,13 +217,13 @@ classes:
         range: string
         identifier: true
         multivalued: false
-        description: Unique identifier for ``Concept``s.
+        description: Unique identifier for Concepts.
       description:
         slot_uri: this:Concept.description
         range: string
         required: false
         multivalued: false
-        description: Description for the ``Concept``.
+        description: Description for the Concept.
 
   Element:
     class_uri: this:Element
@@ -237,7 +237,7 @@ classes:
         range: string
         required: true
         multivalued: false
-        description: Name for the ``Element``.
+        description: Name for the Element.
 
   Relationship:
     class_uri: this:Relationship
@@ -246,7 +246,7 @@ classes:
     represents_relationship: true
     description: A core set of generic relationships, each of which can connect
       a set of source and target concepts. This class represents the
-      ``predicate``.
+      predicate.
     attributes:
       subject:
         slot_uri: this:Relationship.subject
@@ -374,8 +374,8 @@ classes:
     is_a: CompositeElement
     description: The grouping element aggregates or composes concepts that
       belong together based on some common characteristic. To create a
-      ``Grouping``, associate an ``Element`` through a ``Relationship`` to the
-      ``Grouping``.
+      Grouping, associate an Element through a Relationship to the
+      Grouping.
 
   Capability:
     class_uri: this:Capability

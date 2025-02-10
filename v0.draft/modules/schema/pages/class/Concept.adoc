@@ -36,12 +36,12 @@
 | <<description,`description`>>
 | 0..1
 | https://w3id.org/linkml/String[`string`]
-| +++Description for the ``Concept``.+++
+| +++Description for the Concept.+++
 
 | <<id,`id`>>
 | 0..1
 | https://w3id.org/linkml/String[`string`]
-| +++Unique identifier for ``Concept``s.+++
+| +++Unique identifier for Concepts.+++
 |===
 
 '''
@@ -50,7 +50,7 @@
 //[discrete]
 [#description]
 === `description`
-+++Description for the ``Concept``.+++
++++Description for the Concept.+++
 
 [cols="h,4",width=65%]
 |===
@@ -67,7 +67,7 @@
 //[discrete]
 [#id]
 === `id`
-+++Unique identifier for ``Concept``s.+++
++++Unique identifier for Concepts.+++
 
 [cols="h,4",width=65%]
 |===

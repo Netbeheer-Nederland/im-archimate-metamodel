@@ -86,7 +86,7 @@
 | +++Represents a collection of behavior based on specific criteria, such as required resources, competencies, or location, and is managed, performed, or implemented as a whole.+++
 
 | xref::class/Grouping.adoc[`Grouping`]
-| +++The grouping element aggregates or composes concepts that belong together based on some common characteristic. To create a ``Grouping``, associate an ``Element`` through a ``Relationship`` to the ``Grouping``.+++
+| +++The grouping element aggregates or composes concepts that belong together based on some common characteristic. To create a Grouping, associate an Element through a Relationship to the Grouping.+++
 
 | xref::class/Interface.adoc[`Interface`]
 | +++An external active structure element, called an interface, represents a point of access where one or more services are provided to the environment.+++
@@ -98,10 +98,10 @@
 | +++An internal behavior element represents a unit of activity that can be performed by one or more active structure elements.+++
 
 | xref::class/LFEnergyModel.adoc[`LFEnergyModel`]
-| +++Instance of the LFEnergy ``Functional Architecture`` metamodel.+++
+| +++Instance of the LFEnergy Functional Architecture metamodel.+++
 
 | xref::class/Model.adoc[`Model`]
-| +++A model is a collection of ``Concept``s.+++
+| +++A model is a collection of Concepts.+++
 
 | xref::class/Node.adoc[`Node`]
 | +++A node represents a computational or physical resource that hosts, manipulates, or interacts with other computational or physical resources.+++
@@ -116,7 +116,7 @@
 | +++The realization relationship represents that an element plays a critical role in the creation, achievement, sustenance, or operation of a more abstract element.+++
 
 | xref::class/Relationship.adoc[`Relationship`]
-| +++A core set of generic relationships, each of which can connect a set of source and target concepts. This class represents the ``predicate``.+++
+| +++A core set of generic relationships, each of which can connect a set of source and target concepts. This class represents the predicate.+++
 
 | xref::class/Service.adoc[`Service`]
 | +++Represents an explicitly defined exposed behavior.+++

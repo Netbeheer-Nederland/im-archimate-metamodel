@@ -2,7 +2,7 @@
 :toclevels: 4
 
 
-+++Instance of the LFEnergy ``Functional Architecture`` metamodel.+++
++++Instance of the LFEnergy Functional Architecture metamodel.+++
 
 
 [cols="h,3",width=65%]
@@ -366,102 +366,102 @@ legend: "" {
 | <<access_relationships,`access_relationships`>>
 | 1..*
 | xref::class/AccessRelationship.adoc[`AccessRelationship`]
-| +++All instances of AccessRelationship-s+++
+| +++All instances of AccessRelationships+++
 
 | <<aggregation_relationships,`aggregation_relationships`>>
 | 1..*
 | xref::class/AggregationRelationship.adoc[`AggregationRelationship`]
-| +++All instances of AggregationRelationship-s+++
+| +++All instances of AggregationRelationships+++
 
 | <<application_components,`application_components`>>
 | 1..*
 | xref::class/ApplicationComponent.adoc[`ApplicationComponent`]
-| +++All instances of ApplicationComponent-s+++
+| +++All instances of ApplicationComponents+++
 
 | <<application_functions,`application_functions`>>
 | 1..*
 | xref::class/ApplicationFunction.adoc[`ApplicationFunction`]
-| +++All instances of ApplicationFunction-s+++
+| +++All instances of ApplicationFunctions+++
 
 | <<application_services,`application_services`>>
 | 1..*
 | xref::class/ApplicationService.adoc[`ApplicationService`]
-| +++All instances of ApplicationService-s+++
+| +++All instances of ApplicationServices+++
 
 | <<assignment_relationships,`assignment_relationships`>>
 | 1..*
 | xref::class/AssignmentRelationship.adoc[`AssignmentRelationship`]
-| +++All instances of AssignmentRelationship-s+++
+| +++All instances of AssignmentRelationships+++
 
 | <<association_relationships,`association_relationships`>>
 | 1..*
 | xref::class/AssociationRelationship.adoc[`AssociationRelationship`]
-| +++All instances of AssociationRelationship-s+++
+| +++All instances of AssociationRelationships+++
 
 | <<business_actors,`business_actors`>>
 | 1..*
 | xref::class/BusinessActor.adoc[`BusinessActor`]
-| +++All instances of BusinessActor-s+++
+| +++All instances of BusinessActors+++
 
 | <<business_functions,`business_functions`>>
 | 1..*
 | xref::class/BusinessFunction.adoc[`BusinessFunction`]
-| +++All instances of BusinessFunction-s+++
+| +++All instances of BusinessFunctions+++
 
 | <<business_objects,`business_objects`>>
 | 1..*
 | xref::class/BusinessObject.adoc[`BusinessObject`]
-| +++All instances of BusinessObject-s+++
+| +++All instances of BusinessObjects+++
 
 | <<business_processes,`business_processes`>>
 | 1..*
 | xref::class/BusinessProcess.adoc[`BusinessProcess`]
-| +++All instances of BusinessProcess-s+++
+| +++All instances of BusinessProcesss+++
 
 | <<business_roles,`business_roles`>>
 | 1..*
 | xref::class/BusinessRole.adoc[`BusinessRole`]
-| +++All instances of BusinessRole-s+++
+| +++All instances of BusinessRoles+++
 
 | <<capabilities,`capabilities`>>
 | 1..*
 | xref::class/Capability.adoc[`Capability`]
-| +++All instances of Capability-s+++
+| +++All instances of Capabilities+++
 
 | <<composition_relationships,`composition_relationships`>>
 | 1..*
 | xref::class/CompositionRelationship.adoc[`CompositionRelationship`]
-| +++All instances of CompositionRelationship-s+++
+| +++All instances of CompositionRelationships+++
 
 | <<data_objects,`data_objects`>>
 | 1..*
 | xref::class/DataObject.adoc[`DataObject`]
-| +++All instances of DataObject-s+++
+| +++All instances of DataObjects+++
 
 | <<groupings,`groupings`>>
 | 1..*
 | xref::class/Grouping.adoc[`Grouping`]
-| +++All instances of Grouping-s+++
+| +++All instances of Groupings+++
 
 | <<nodes,`nodes`>>
 | 1..*
 | xref::class/Node.adoc[`Node`]
-| +++All instances of Node-s+++
+| +++All instances of Nodes+++
 
 | <<realization_relationships,`realization_relationships`>>
 | 1..*
 | xref::class/RealizationRelationship.adoc[`RealizationRelationship`]
-| +++All instances of RealizationRelationship-s+++
+| +++All instances of RealizationRelationships+++
 
 | <<serving_relationships,`serving_relationships`>>
 | 1..*
 | xref::class/ServingRelationship.adoc[`ServingRelationship`]
-| +++All instances of ServingRelationship-s+++
+| +++All instances of ServingRelationships+++
 
 | <<technology_collaborations,`technology_collaborations`>>
 | 1..*
 | xref::class/TechnologyCollaboration.adoc[`TechnologyCollaboration`]
-| +++All instances of TechnologyCollaboration-s+++
+| +++All instances of TechnologyCollaborations+++
 |===
 
 '''
@@ -470,7 +470,7 @@ legend: "" {
 //[discrete]
 [#access_relationships]
 === `access_relationships`
-+++All instances of AccessRelationship-s+++
++++All instances of AccessRelationships+++
 
 [cols="h,4",width=65%]
 |===
@@ -487,7 +487,7 @@ legend: "" {
 //[discrete]
 [#aggregation_relationships]
 === `aggregation_relationships`
-+++All instances of AggregationRelationship-s+++
++++All instances of AggregationRelationships+++
 
 [cols="h,4",width=65%]
 |===
@@ -504,7 +504,7 @@ legend: "" {
 //[discrete]
 [#application_components]
 === `application_components`
-+++All instances of ApplicationComponent-s+++
++++All instances of ApplicationComponents+++
 
 [cols="h,4",width=65%]
 |===
@@ -521,7 +521,7 @@ legend: "" {
 //[discrete]
 [#application_functions]
 === `application_functions`
-+++All instances of ApplicationFunction-s+++
++++All instances of ApplicationFunctions+++
 
 [cols="h,4",width=65%]
 |===
@@ -538,7 +538,7 @@ legend: "" {
 //[discrete]
 [#application_services]
 === `application_services`
-+++All instances of ApplicationService-s+++
++++All instances of ApplicationServices+++
 
 [cols="h,4",width=65%]
 |===
@@ -555,7 +555,7 @@ legend: "" {
 //[discrete]
 [#assignment_relationships]
 === `assignment_relationships`
-+++All instances of AssignmentRelationship-s+++
++++All instances of AssignmentRelationships+++
 
 [cols="h,4",width=65%]
 |===
@@ -572,7 +572,7 @@ legend: "" {
 //[discrete]
 [#association_relationships]
 === `association_relationships`
-+++All instances of AssociationRelationship-s+++
++++All instances of AssociationRelationships+++
 
 [cols="h,4",width=65%]
 |===
@@ -589,7 +589,7 @@ legend: "" {
 //[discrete]
 [#business_actors]
 === `business_actors`
-+++All instances of BusinessActor-s+++
++++All instances of BusinessActors+++
 
 [cols="h,4",width=65%]
 |===
@@ -606,7 +606,7 @@ legend: "" {
 //[discrete]
 [#business_functions]
 === `business_functions`
-+++All instances of BusinessFunction-s+++
++++All instances of BusinessFunctions+++
 
 [cols="h,4",width=65%]
 |===
@@ -623,7 +623,7 @@ legend: "" {
 //[discrete]
 [#business_objects]
 === `business_objects`
-+++All instances of BusinessObject-s+++
++++All instances of BusinessObjects+++
 
 [cols="h,4",width=65%]
 |===
@@ -640,7 +640,7 @@ legend: "" {
 //[discrete]
 [#business_processes]
 === `business_processes`
-+++All instances of BusinessProcess-s+++
++++All instances of BusinessProcesss+++
 
 [cols="h,4",width=65%]
 |===
@@ -657,7 +657,7 @@ legend: "" {
 //[discrete]
 [#business_roles]
 === `business_roles`
-+++All instances of BusinessRole-s+++
++++All instances of BusinessRoles+++
 
 [cols="h,4",width=65%]
 |===
@@ -674,7 +674,7 @@ legend: "" {
 //[discrete]
 [#capabilities]
 === `capabilities`
-+++All instances of Capability-s+++
++++All instances of Capabilities+++
 
 [cols="h,4",width=65%]
 |===
@@ -691,7 +691,7 @@ legend: "" {
 //[discrete]
 [#composition_relationships]
 === `composition_relationships`
-+++All instances of CompositionRelationship-s+++
++++All instances of CompositionRelationships+++
 
 [cols="h,4",width=65%]
 |===
@@ -742,7 +742,7 @@ legend: "" {
 //[discrete]
 [#data_objects]
 === `data_objects`
-+++All instances of DataObject-s+++
++++All instances of DataObjects+++
 
 [cols="h,4",width=65%]
 |===
@@ -759,7 +759,7 @@ legend: "" {
 //[discrete]
 [#groupings]
 === `groupings`
-+++All instances of Grouping-s+++
++++All instances of Groupings+++
 
 [cols="h,4",width=65%]
 |===
@@ -793,7 +793,7 @@ legend: "" {
 //[discrete]
 [#nodes]
 === `nodes`
-+++All instances of Node-s+++
++++All instances of Nodes+++
 
 [cols="h,4",width=65%]
 |===
@@ -810,7 +810,7 @@ legend: "" {
 //[discrete]
 [#realization_relationships]
 === `realization_relationships`
-+++All instances of RealizationRelationship-s+++
++++All instances of RealizationRelationships+++
 
 [cols="h,4",width=65%]
 |===
@@ -844,7 +844,7 @@ legend: "" {
 //[discrete]
 [#serving_relationships]
 === `serving_relationships`
-+++All instances of ServingRelationship-s+++
++++All instances of ServingRelationships+++
 
 [cols="h,4",width=65%]
 |===
@@ -861,7 +861,7 @@ legend: "" {
 //[discrete]
 [#technology_collaborations]
 === `technology_collaborations`
-+++All instances of TechnologyCollaboration-s+++
++++All instances of TechnologyCollaborations+++
 
 [cols="h,4",width=65%]
 |===

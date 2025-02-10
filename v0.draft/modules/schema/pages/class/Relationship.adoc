@@ -2,7 +2,7 @@
 :toclevels: 4
 
 
-+++A core set of generic relationships, each of which can connect a set of source and target concepts. This class represents the ``predicate``.+++
++++A core set of generic relationships, each of which can connect a set of source and target concepts. This class represents the predicate.+++
 
 
 [cols="h,3",width=65%]
@@ -137,12 +137,12 @@ legend: "" {
 | <<description,`description`>>
 | 0..1
 | https://w3id.org/linkml/String[`string`]
-| +++Description for the ``Concept``.+++
+| +++Description for the Concept.+++
 
 | <<id,`id`>>
 | 0..1
 | https://w3id.org/linkml/String[`string`]
-| +++Unique identifier for ``Concept``s.+++
+| +++Unique identifier for Concepts.+++
 |===
 
 '''
@@ -151,7 +151,7 @@ legend: "" {
 //[discrete]
 [#description]
 === `description`
-+++Description for the ``Concept``.+++
++++Description for the Concept.+++
 
 [cols="h,4",width=65%]
 |===
@@ -171,7 +171,7 @@ legend: "" {
 //[discrete]
 [#id]
 === `id`
-+++Unique identifier for ``Concept``s.+++
++++Unique identifier for Concepts.+++
 
 [cols="h,4",width=65%]
 |===

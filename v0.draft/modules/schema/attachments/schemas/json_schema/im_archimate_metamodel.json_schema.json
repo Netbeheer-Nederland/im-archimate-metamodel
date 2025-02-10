@@ -15,14 +15,14 @@
             "description": "The access relationship represents the ability of behavior and active structure elements to observe or act upon passive structure elements.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "object": {
@@ -52,14 +52,14 @@
             "description": "The aggregation relationship represents that an element combines one or more other concepts.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "object": {
@@ -84,18 +84,18 @@
             "description": "An application component represents an encapsulation of application functionality aligned to implementation structure, which is modular and replaceable.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -111,18 +111,18 @@
             "description": "An application function represents automated behavior that can be performed by an application component.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -138,18 +138,18 @@
             "description": "An application service represents an explicitly defined exposed application behavior.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -165,14 +165,14 @@
             "description": "The assignment relationship represents the allocation of responsibility, performance of behavior, storage, or execution.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "object": {
@@ -197,14 +197,14 @@
             "description": "An association relationship represents an unspecified relationship, or one that is not represented by another ArchiMate relationship.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "object": {
@@ -229,18 +229,18 @@
             "description": "A business actor represents a business entity that is capable of performing behavior.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -256,18 +256,18 @@
             "description": "A business function represents a collection of business behavior based on a chosen set of criteria such as required business resources and/or competencies, and is managed or performed as a whole.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -283,18 +283,18 @@
             "description": "A business object represents a concept used within a particular business domain.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -310,18 +310,18 @@
             "description": "A business process represents a sequence of business behaviors that achieves a specific result such as a defined set of products or business services.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -337,18 +337,18 @@
             "description": "A business role represents the responsibility for performing specific behavior, to which an actor can be assigned, or the part an actor plays in a particular action or event.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -364,18 +364,18 @@
             "description": "A capability represents an ability that an active structure element, such as an organization, person, or system, possesses.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -391,14 +391,14 @@
             "description": "The composition relationship represents that an element consists of one or more other concepts.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "object": {
@@ -423,18 +423,18 @@
             "description": "A data object represents data structured for automated processing.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -447,24 +447,24 @@
         },
         "Grouping": {
             "additionalProperties": false,
-            "description": "The grouping element aggregates or composes concepts that belong together based on some common characteristic. To create a ``Grouping``, associate an ``Element`` through a ``Relationship`` to the ``Grouping``.",
+            "description": "The grouping element aggregates or composes concepts that belong together based on some common characteristic. To create a Grouping, associate an Element through a Relationship to the Grouping.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -477,101 +477,101 @@
         },
         "LFEnergyModel": {
             "additionalProperties": false,
-            "description": "Instance of the LFEnergy ``Functional Architecture`` metamodel.",
+            "description": "Instance of the LFEnergy Functional Architecture metamodel.",
             "properties": {
                 "access_relationships": {
-                    "description": "All instances of AccessRelationship-s",
+                    "description": "All instances of AccessRelationships",
                     "items": {
                         "$ref": "#/$defs/AccessRelationship"
                     },
                     "type": "array"
                 },
                 "aggregation_relationships": {
-                    "description": "All instances of AggregationRelationship-s",
+                    "description": "All instances of AggregationRelationships",
                     "items": {
                         "$ref": "#/$defs/AggregationRelationship"
                     },
                     "type": "array"
                 },
                 "application_components": {
-                    "description": "All instances of ApplicationComponent-s",
+                    "description": "All instances of ApplicationComponents",
                     "items": {
                         "$ref": "#/$defs/ApplicationComponent"
                     },
                     "type": "array"
                 },
                 "application_functions": {
-                    "description": "All instances of ApplicationFunction-s",
+                    "description": "All instances of ApplicationFunctions",
                     "items": {
                         "$ref": "#/$defs/ApplicationFunction"
                     },
                     "type": "array"
                 },
                 "application_services": {
-                    "description": "All instances of ApplicationService-s",
+                    "description": "All instances of ApplicationServices",
                     "items": {
                         "$ref": "#/$defs/ApplicationService"
                     },
                     "type": "array"
                 },
                 "assignment_relationships": {
-                    "description": "All instances of AssignmentRelationship-s",
+                    "description": "All instances of AssignmentRelationships",
                     "items": {
                         "$ref": "#/$defs/AssignmentRelationship"
                     },
                     "type": "array"
                 },
                 "association_relationships": {
-                    "description": "All instances of AssociationRelationship-s",
+                    "description": "All instances of AssociationRelationships",
                     "items": {
                         "$ref": "#/$defs/AssociationRelationship"
                     },
                     "type": "array"
                 },
                 "business_actors": {
-                    "description": "All instances of BusinessActor-s",
+                    "description": "All instances of BusinessActors",
                     "items": {
                         "$ref": "#/$defs/BusinessActor"
                     },
                     "type": "array"
                 },
                 "business_functions": {
-                    "description": "All instances of BusinessFunction-s",
+                    "description": "All instances of BusinessFunctions",
                     "items": {
                         "$ref": "#/$defs/BusinessFunction"
                     },
                     "type": "array"
                 },
                 "business_objects": {
-                    "description": "All instances of BusinessObject-s",
+                    "description": "All instances of BusinessObjects",
                     "items": {
                         "$ref": "#/$defs/BusinessObject"
                     },
                     "type": "array"
                 },
                 "business_processes": {
-                    "description": "All instances of BusinessProcess-s",
+                    "description": "All instances of BusinessProcesss",
                     "items": {
                         "$ref": "#/$defs/BusinessProcess"
                     },
                     "type": "array"
                 },
                 "business_roles": {
-                    "description": "All instances of BusinessRole-s",
+                    "description": "All instances of BusinessRoles",
                     "items": {
                         "$ref": "#/$defs/BusinessRole"
                     },
                     "type": "array"
                 },
                 "capabilities": {
-                    "description": "All instances of Capability-s",
+                    "description": "All instances of Capabilities",
                     "items": {
                         "$ref": "#/$defs/Capability"
                     },
                     "type": "array"
                 },
                 "composition_relationships": {
-                    "description": "All instances of CompositionRelationship-s",
+                    "description": "All instances of CompositionRelationships",
                     "items": {
                         "$ref": "#/$defs/CompositionRelationship"
                     },
@@ -580,14 +580,14 @@
                 "conforms_to": {},
                 "contact_point": {},
                 "data_objects": {
-                    "description": "All instances of DataObject-s",
+                    "description": "All instances of DataObjects",
                     "items": {
                         "$ref": "#/$defs/DataObject"
                     },
                     "type": "array"
                 },
                 "groupings": {
-                    "description": "All instances of Grouping-s",
+                    "description": "All instances of Groupings",
                     "items": {
                         "$ref": "#/$defs/Grouping"
                     },
@@ -595,14 +595,14 @@
                 },
                 "identifier": {},
                 "nodes": {
-                    "description": "All instances of Node-s",
+                    "description": "All instances of Nodes",
                     "items": {
                         "$ref": "#/$defs/Node"
                     },
                     "type": "array"
                 },
                 "realization_relationships": {
-                    "description": "All instances of RealizationRelationship-s",
+                    "description": "All instances of RealizationRelationships",
                     "items": {
                         "$ref": "#/$defs/RealizationRelationship"
                     },
@@ -610,14 +610,14 @@
                 },
                 "release_date": {},
                 "serving_relationships": {
-                    "description": "All instances of ServingRelationship-s",
+                    "description": "All instances of ServingRelationships",
                     "items": {
                         "$ref": "#/$defs/ServingRelationship"
                     },
                     "type": "array"
                 },
                 "technology_collaborations": {
-                    "description": "All instances of TechnologyCollaboration-s",
+                    "description": "All instances of TechnologyCollaborations",
                     "items": {
                         "$ref": "#/$defs/TechnologyCollaboration"
                     },
@@ -660,18 +660,18 @@
             "description": "A node represents a computational or physical resource that hosts, manipulates, or interacts with other computational or physical resources.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -687,14 +687,14 @@
             "description": "The realization relationship represents that an element plays a critical role in the creation, achievement, sustenance, or operation of a more abstract element.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "object": {
@@ -719,14 +719,14 @@
             "description": "The serving relationship represents that an element provides its functionality to another element.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "object": {
@@ -751,18 +751,18 @@
             "description": "A technology collaboration represents an aggregate of two or more technology internal active structure elements that work together to perform collective technology behavior.",
             "properties": {
                 "description": {
-                    "description": "Description for the ``Concept``.",
+                    "description": "Description for the Concept.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "id": {
-                    "description": "Unique identifier for ``Concept``s.",
+                    "description": "Unique identifier for Concepts.",
                     "type": "string"
                 },
                 "name": {
-                    "description": "Name for the ``Element``.",
+                    "description": "Name for the Element.",
                     "type": "string"
                 }
             },
@@ -777,102 +777,102 @@
     "$id": "http://data.netbeheernederland.nl/information-model/im-archimate-metamodel",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
-    "description": "Instance of the LFEnergy ``Functional Architecture`` metamodel.",
+    "description": "Instance of the LFEnergy Functional Architecture metamodel.",
     "metamodel_version": "1.7.0",
     "properties": {
         "access_relationships": {
-            "description": "All instances of AccessRelationship-s",
+            "description": "All instances of AccessRelationships",
             "items": {
                 "$ref": "#/$defs/AccessRelationship"
             },
             "type": "array"
         },
         "aggregation_relationships": {
-            "description": "All instances of AggregationRelationship-s",
+            "description": "All instances of AggregationRelationships",
             "items": {
                 "$ref": "#/$defs/AggregationRelationship"
             },
             "type": "array"
         },
         "application_components": {
-            "description": "All instances of ApplicationComponent-s",
+            "description": "All instances of ApplicationComponents",
             "items": {
                 "$ref": "#/$defs/ApplicationComponent"
             },
             "type": "array"
         },
         "application_functions": {
-            "description": "All instances of ApplicationFunction-s",
+            "description": "All instances of ApplicationFunctions",
             "items": {
                 "$ref": "#/$defs/ApplicationFunction"
             },
             "type": "array"
         },
         "application_services": {
-            "description": "All instances of ApplicationService-s",
+            "description": "All instances of ApplicationServices",
             "items": {
                 "$ref": "#/$defs/ApplicationService"
             },
             "type": "array"
         },
         "assignment_relationships": {
-            "description": "All instances of AssignmentRelationship-s",
+            "description": "All instances of AssignmentRelationships",
             "items": {
                 "$ref": "#/$defs/AssignmentRelationship"
             },
             "type": "array"
         },
         "association_relationships": {
-            "description": "All instances of AssociationRelationship-s",
+            "description": "All instances of AssociationRelationships",
             "items": {
                 "$ref": "#/$defs/AssociationRelationship"
             },
             "type": "array"
         },
         "business_actors": {
-            "description": "All instances of BusinessActor-s",
+            "description": "All instances of BusinessActors",
             "items": {
                 "$ref": "#/$defs/BusinessActor"
             },
             "type": "array"
         },
         "business_functions": {
-            "description": "All instances of BusinessFunction-s",
+            "description": "All instances of BusinessFunctions",
             "items": {
                 "$ref": "#/$defs/BusinessFunction"
             },
             "type": "array"
         },
         "business_objects": {
-            "description": "All instances of BusinessObject-s",
+            "description": "All instances of BusinessObjects",
             "items": {
                 "$ref": "#/$defs/BusinessObject"
             },
             "type": "array"
         },
         "business_processes": {
-            "description": "All instances of BusinessProcess-s",
+            "description": "All instances of BusinessProcesss",
             "items": {
                 "$ref": "#/$defs/BusinessProcess"
             },
             "type": "array"
         },
         "business_roles": {
-            "description": "All instances of BusinessRole-s",
+            "description": "All instances of BusinessRoles",
             "items": {
                 "$ref": "#/$defs/BusinessRole"
             },
             "type": "array"
         },
         "capabilities": {
-            "description": "All instances of Capability-s",
+            "description": "All instances of Capabilities",
             "items": {
                 "$ref": "#/$defs/Capability"
             },
             "type": "array"
         },
         "composition_relationships": {
-            "description": "All instances of CompositionRelationship-s",
+            "description": "All instances of CompositionRelationships",
             "items": {
                 "$ref": "#/$defs/CompositionRelationship"
             },
@@ -881,14 +881,14 @@
         "conforms_to": {},
         "contact_point": {},
         "data_objects": {
-            "description": "All instances of DataObject-s",
+            "description": "All instances of DataObjects",
             "items": {
                 "$ref": "#/$defs/DataObject"
             },
             "type": "array"
         },
         "groupings": {
-            "description": "All instances of Grouping-s",
+            "description": "All instances of Groupings",
             "items": {
                 "$ref": "#/$defs/Grouping"
             },
@@ -896,14 +896,14 @@
         },
         "identifier": {},
         "nodes": {
-            "description": "All instances of Node-s",
+            "description": "All instances of Nodes",
             "items": {
                 "$ref": "#/$defs/Node"
             },
             "type": "array"
         },
         "realization_relationships": {
-            "description": "All instances of RealizationRelationship-s",
+            "description": "All instances of RealizationRelationships",
             "items": {
                 "$ref": "#/$defs/RealizationRelationship"
             },
@@ -911,14 +911,14 @@
         },
         "release_date": {},
         "serving_relationships": {
-            "description": "All instances of ServingRelationship-s",
+            "description": "All instances of ServingRelationships",
             "items": {
                 "$ref": "#/$defs/ServingRelationship"
             },
             "type": "array"
         },
         "technology_collaborations": {
-            "description": "All instances of TechnologyCollaboration-s",
+            "description": "All instances of TechnologyCollaborations",
             "items": {
                 "$ref": "#/$defs/TechnologyCollaboration"
             },

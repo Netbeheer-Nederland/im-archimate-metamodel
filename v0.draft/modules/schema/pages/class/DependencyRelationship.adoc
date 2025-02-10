@@ -139,12 +139,12 @@ legend: "" {
 | <<description,`description`>>
 | 0..1
 | https://w3id.org/linkml/String[`string`]
-| +++Description for the ``Concept``.+++
+| +++Description for the Concept.+++
 
 | <<id,`id`>>
 | 0..1
 | https://w3id.org/linkml/String[`string`]
-| +++Unique identifier for ``Concept``s.+++
+| +++Unique identifier for Concepts.+++
 |===
 
 '''
@@ -153,7 +153,7 @@ legend: "" {
 //[discrete]
 [#description]
 === `description`
-+++Description for the ``Concept``.+++
++++Description for the Concept.+++
 
 [cols="h,4",width=65%]
 |===
@@ -173,7 +173,7 @@ legend: "" {
 //[discrete]
 [#id]
 === `id`
-+++Unique identifier for ``Concept``s.+++
++++Unique identifier for Concepts.+++
 
 [cols="h,4",width=65%]
 |===
