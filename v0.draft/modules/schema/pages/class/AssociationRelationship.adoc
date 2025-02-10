@@ -1,0 +1,231 @@
+= `AssociationRelationship`
+:toclevels: 4
+
+
++++An association relationship represents an unspecified relationship, or one that is not represented by another ArchiMate relationship.+++
+
+
+[cols="h,3",width=65%]
+|===
+| Type
+| Class
+
+| URI
+| `this:AssociationRelationship`
+
+
+
+
+|===
+
+== Class hierarchy
+* xref::class/Concept.adoc[`Concept`]
+** xref::class/Relationship.adoc[`Relationship`]
+*** xref::class/DependencyRelationship.adoc[`DependencyRelationship`]
+**** *`AssociationRelationship`*
+
+
+== Slots
+
+
+
+.Associated classes
+[d2,svg,theme=4]
+----
+vars: {
+  d2-config: {
+    pad: 20
+  }
+}
+AssociationRelationship {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+Element {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+Concept {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+
+AssociationRelationship -> Element: subject
+
+
+AssociationRelationship -> Concept: object
+
+
+legend: "" {
+  style: {
+    fill: transparent
+    stroke: transparent
+  }
+  grid-rows: 3
+  grid-columns: 2
+  grid-gap: 10
+  near: bottom-right
+  iec61968_color: "" {
+    style: {
+      fill: "#d1e7c2"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61968_text: "IEC61968 (Enterprise)" {
+    shape: text
+  }
+  iec61970_color: "" {
+    style: {
+      fill: "#eccfcb"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61970_text: "IEC61970 (Grid)" {
+    shape: text
+  }
+  iec62325_color: "" {
+    style: {
+      fill: "#fffbef"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec62325_text: "IEC62325 (Market)" {
+    shape: text
+  }
+}
+----
+
+
+[cols="3,1,3,6",width=100%]
+|===
+| Name | Cardinality | Type | Description
+
+| <<object,`object`>>
+| 1
+| xref::class/Concept.adoc[`Concept`]
+| +++Target element or relationship for the relationship.+++
+
+| <<subject,`subject`>>
+| 1
+| xref::class/Element.adoc[`Element`]
+| +++Source element for the relationship+++
+
+| <<description,`description`>>
+| 0..1
+| https://w3id.org/linkml/String[`string`]
+| +++Description for the ``Concept``.+++
+
+| <<id,`id`>>
+| 0..1
+| https://w3id.org/linkml/String[`string`]
+| +++Unique identifier for ``Concept``s.+++
+|===
+
+'''
+
+
+//[discrete]
+[#description]
+=== `description`
++++Description for the ``Concept``.+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:Concept.description`
+| Cardinality
+| 0..1
+| Type
+| https://w3id.org/linkml/String[`string`]
+
+| Inherited from
+| xref::class/Concept.adoc[`Concept`]
+
+
+|===
+
+//[discrete]
+[#id]
+=== `id`
++++Unique identifier for ``Concept``s.+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:Concept.id`
+| Cardinality
+| 0..1
+| Type
+| https://w3id.org/linkml/String[`string`]
+
+| Inherited from
+| xref::class/Concept.adoc[`Concept`]
+
+
+|===
+
+//[discrete]
+[#object]
+=== `object`
++++Target element or relationship for the relationship.+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:Relationship.object`
+| Cardinality
+| 1
+| Type
+| xref::class/Concept.adoc[`Concept`]
+
+| Inherited from
+| xref::class/Relationship.adoc[`Relationship`]
+
+
+|===
+
+//[discrete]
+[#subject]
+=== `subject`
++++Source element for the relationship+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:Relationship.subject`
+| Cardinality
+| 1
+| Type
+| xref::class/Element.adoc[`Element`]
+
+| Inherited from
+| xref::class/Relationship.adoc[`Relationship`]
+
+
+|===
+
+

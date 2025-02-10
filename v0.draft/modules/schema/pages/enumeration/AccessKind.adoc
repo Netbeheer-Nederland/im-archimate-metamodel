@@ -1,0 +1,41 @@
+= `AccessKind`
+:toclevels: 4
+
+
++++Kind of access relationship.+++
+
+
+[cols="h,3",width=65%]
+|===
+| Type
+| Enumeration
+
+| URI
+| `this:AccessKind`
+
+
+| CIM standard (perspective)
+| IEC61970 (Grid)
+
+
+
+|===
+
+== Values
+
+[cols="1,1,5",width=100%]
+|===
+| Value | URI | Description
+
+| `read`
+| `this:AccessKind.read`
+| n/a
+
+| `read_write`
+| `this:AccessKind.readWrite`
+| n/a
+
+| `write`
+| `this:AccessKind.write`
+| n/a
+|===

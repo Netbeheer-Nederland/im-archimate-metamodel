@@ -1,0 +1,118 @@
+= `Interface`
+:toclevels: 4
+
+
++++An external active structure element, called an interface, represents a point of access where one or more services are provided to the environment.+++
+
+
+[cols="h,3",width=65%]
+|===
+| Type
+| Abstract class
+
+| URI
+| `this:Interface`
+
+
+
+
+|===
+
+== Class hierarchy
+* xref::class/Concept.adoc[`Concept`]
+** xref::class/Element.adoc[`Element`]
+*** xref::class/StructureElement.adoc[`StructureElement`]
+**** xref::class/ActiveStructureElement.adoc[`ActiveStructureElement`]
+***** xref::class/ExternalActiveStructureElement.adoc[`ExternalActiveStructureElement`]
+****** *`Interface`*
+
+
+== Slots
+
+
+
+
+[cols="3,1,3,6",width=100%]
+|===
+| Name | Cardinality | Type | Description
+
+| <<name,`name`>>
+| 1
+| https://w3id.org/linkml/String[`string`]
+| +++Name for the ``Element``.+++
+
+| <<description,`description`>>
+| 0..1
+| https://w3id.org/linkml/String[`string`]
+| +++Description for the ``Concept``.+++
+
+| <<id,`id`>>
+| 0..1
+| https://w3id.org/linkml/String[`string`]
+| +++Unique identifier for ``Concept``s.+++
+|===
+
+'''
+
+
+//[discrete]
+[#description]
+=== `description`
++++Description for the ``Concept``.+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:Concept.description`
+| Cardinality
+| 0..1
+| Type
+| https://w3id.org/linkml/String[`string`]
+
+| Inherited from
+| xref::class/Concept.adoc[`Concept`]
+
+
+|===
+
+//[discrete]
+[#id]
+=== `id`
++++Unique identifier for ``Concept``s.+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:Concept.id`
+| Cardinality
+| 0..1
+| Type
+| https://w3id.org/linkml/String[`string`]
+
+| Inherited from
+| xref::class/Concept.adoc[`Concept`]
+
+
+|===
+
+//[discrete]
+[#name]
+=== `name`
++++Name for the ``Element``.+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:Element.name`
+| Cardinality
+| 1
+| Type
+| https://w3id.org/linkml/String[`string`]
+
+| Inherited from
+| xref::class/Element.adoc[`Element`]
+
+
+|===
+
+

@@ -1,0 +1,895 @@
+= `LFEnergyModel`
+:toclevels: 4
+
+
++++Instance of the LFEnergy ``Functional Architecture`` metamodel.+++
+
+
+[cols="h,3",width=65%]
+|===
+| Type
+| Class
+
+| URI
+| `this:LFEnergyModel`
+
+
+
+
+|===
+
+== Class hierarchy
+* xref::class/Model.adoc[`Model`]
+** *`LFEnergyModel`*
+
+
+== Slots
+
+
+
+.Associated classes
+[d2,svg,theme=4]
+----
+vars: {
+  d2-config: {
+    pad: 20
+  }
+}
+LFEnergyModel {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+Grouping {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+Capability {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+BusinessActor {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+BusinessRole {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+BusinessFunction {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+BusinessProcess {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+BusinessObject {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+ApplicationService {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+ApplicationFunction {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+ApplicationComponent {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+DataObject {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+TechnologyCollaboration {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+Node {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+RealizationRelationship {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+AssignmentRelationship {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+AccessRelationship {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+ServingRelationship {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+AssociationRelationship {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+CompositionRelationship {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+AggregationRelationship {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+
+LFEnergyModel -> Grouping: groupings
+
+
+LFEnergyModel -> Capability: capabilities
+
+
+LFEnergyModel -> BusinessActor: business_actors
+
+
+LFEnergyModel -> BusinessRole: business_roles
+
+
+LFEnergyModel -> BusinessFunction: business_functions
+
+
+LFEnergyModel -> BusinessProcess: business_processes
+
+
+LFEnergyModel -> BusinessObject: business_objects
+
+
+LFEnergyModel -> ApplicationService: application_services
+
+
+LFEnergyModel -> ApplicationFunction: application_functions
+
+
+LFEnergyModel -> ApplicationComponent: application_components
+
+
+LFEnergyModel -> DataObject: data_objects
+
+
+LFEnergyModel -> TechnologyCollaboration: technology_collaborations
+
+
+LFEnergyModel -> Node: nodes
+
+
+LFEnergyModel -> RealizationRelationship: realization_relationships
+
+
+LFEnergyModel -> AssignmentRelationship: assignment_relationships
+
+
+LFEnergyModel -> AccessRelationship: access_relationships
+
+
+LFEnergyModel -> ServingRelationship: serving_relationships
+
+
+LFEnergyModel -> AssociationRelationship: association_relationships
+
+
+LFEnergyModel -> CompositionRelationship: composition_relationships
+
+
+LFEnergyModel -> AggregationRelationship: aggregation_relationships
+
+
+legend: "" {
+  style: {
+    fill: transparent
+    stroke: transparent
+  }
+  grid-rows: 3
+  grid-columns: 2
+  grid-gap: 10
+  near: bottom-right
+  iec61968_color: "" {
+    style: {
+      fill: "#d1e7c2"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61968_text: "IEC61968 (Enterprise)" {
+    shape: text
+  }
+  iec61970_color: "" {
+    style: {
+      fill: "#eccfcb"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61970_text: "IEC61970 (Grid)" {
+    shape: text
+  }
+  iec62325_color: "" {
+    style: {
+      fill: "#fffbef"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec62325_text: "IEC62325 (Market)" {
+    shape: text
+  }
+}
+----
+
+
+[cols="3,1,3,6",width=100%]
+|===
+| Name | Cardinality | Type | Description
+
+| <<conforms_to,`conforms_to`>>
+| 1
+| n/a
+| n/a
+
+| <<contact_point,`contact_point`>>
+| 1
+| n/a
+| n/a
+
+| <<identifier,`identifier`>>
+| 1
+| n/a
+| n/a
+
+| <<release_date,`release_date`>>
+| 1
+| n/a
+| n/a
+
+| <<version,`version`>>
+| 1
+| n/a
+| n/a
+
+| <<access_relationships,`access_relationships`>>
+| 1..*
+| xref::class/AccessRelationship.adoc[`AccessRelationship`]
+| +++All instances of AccessRelationship-s+++
+
+| <<aggregation_relationships,`aggregation_relationships`>>
+| 1..*
+| xref::class/AggregationRelationship.adoc[`AggregationRelationship`]
+| +++All instances of AggregationRelationship-s+++
+
+| <<application_components,`application_components`>>
+| 1..*
+| xref::class/ApplicationComponent.adoc[`ApplicationComponent`]
+| +++All instances of ApplicationComponent-s+++
+
+| <<application_functions,`application_functions`>>
+| 1..*
+| xref::class/ApplicationFunction.adoc[`ApplicationFunction`]
+| +++All instances of ApplicationFunction-s+++
+
+| <<application_services,`application_services`>>
+| 1..*
+| xref::class/ApplicationService.adoc[`ApplicationService`]
+| +++All instances of ApplicationService-s+++
+
+| <<assignment_relationships,`assignment_relationships`>>
+| 1..*
+| xref::class/AssignmentRelationship.adoc[`AssignmentRelationship`]
+| +++All instances of AssignmentRelationship-s+++
+
+| <<association_relationships,`association_relationships`>>
+| 1..*
+| xref::class/AssociationRelationship.adoc[`AssociationRelationship`]
+| +++All instances of AssociationRelationship-s+++
+
+| <<business_actors,`business_actors`>>
+| 1..*
+| xref::class/BusinessActor.adoc[`BusinessActor`]
+| +++All instances of BusinessActor-s+++
+
+| <<business_functions,`business_functions`>>
+| 1..*
+| xref::class/BusinessFunction.adoc[`BusinessFunction`]
+| +++All instances of BusinessFunction-s+++
+
+| <<business_objects,`business_objects`>>
+| 1..*
+| xref::class/BusinessObject.adoc[`BusinessObject`]
+| +++All instances of BusinessObject-s+++
+
+| <<business_processes,`business_processes`>>
+| 1..*
+| xref::class/BusinessProcess.adoc[`BusinessProcess`]
+| +++All instances of BusinessProcess-s+++
+
+| <<business_roles,`business_roles`>>
+| 1..*
+| xref::class/BusinessRole.adoc[`BusinessRole`]
+| +++All instances of BusinessRole-s+++
+
+| <<capabilities,`capabilities`>>
+| 1..*
+| xref::class/Capability.adoc[`Capability`]
+| +++All instances of Capability-s+++
+
+| <<composition_relationships,`composition_relationships`>>
+| 1..*
+| xref::class/CompositionRelationship.adoc[`CompositionRelationship`]
+| +++All instances of CompositionRelationship-s+++
+
+| <<data_objects,`data_objects`>>
+| 1..*
+| xref::class/DataObject.adoc[`DataObject`]
+| +++All instances of DataObject-s+++
+
+| <<groupings,`groupings`>>
+| 1..*
+| xref::class/Grouping.adoc[`Grouping`]
+| +++All instances of Grouping-s+++
+
+| <<nodes,`nodes`>>
+| 1..*
+| xref::class/Node.adoc[`Node`]
+| +++All instances of Node-s+++
+
+| <<realization_relationships,`realization_relationships`>>
+| 1..*
+| xref::class/RealizationRelationship.adoc[`RealizationRelationship`]
+| +++All instances of RealizationRelationship-s+++
+
+| <<serving_relationships,`serving_relationships`>>
+| 1..*
+| xref::class/ServingRelationship.adoc[`ServingRelationship`]
+| +++All instances of ServingRelationship-s+++
+
+| <<technology_collaborations,`technology_collaborations`>>
+| 1..*
+| xref::class/TechnologyCollaboration.adoc[`TechnologyCollaboration`]
+| +++All instances of TechnologyCollaboration-s+++
+|===
+
+'''
+
+
+//[discrete]
+[#access_relationships]
+=== `access_relationships`
++++All instances of AccessRelationship-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.accessRelationships`
+| Cardinality
+| 1..*
+| Type
+| xref::class/AccessRelationship.adoc[`AccessRelationship`]
+
+
+|===
+
+//[discrete]
+[#aggregation_relationships]
+=== `aggregation_relationships`
++++All instances of AggregationRelationship-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.aggregationRelationships`
+| Cardinality
+| 1..*
+| Type
+| xref::class/AggregationRelationship.adoc[`AggregationRelationship`]
+
+
+|===
+
+//[discrete]
+[#application_components]
+=== `application_components`
++++All instances of ApplicationComponent-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.applicationComponents`
+| Cardinality
+| 1..*
+| Type
+| xref::class/ApplicationComponent.adoc[`ApplicationComponent`]
+
+
+|===
+
+//[discrete]
+[#application_functions]
+=== `application_functions`
++++All instances of ApplicationFunction-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.applicationFunctions`
+| Cardinality
+| 1..*
+| Type
+| xref::class/ApplicationFunction.adoc[`ApplicationFunction`]
+
+
+|===
+
+//[discrete]
+[#application_services]
+=== `application_services`
++++All instances of ApplicationService-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.applicationServices`
+| Cardinality
+| 1..*
+| Type
+| xref::class/ApplicationService.adoc[`ApplicationService`]
+
+
+|===
+
+//[discrete]
+[#assignment_relationships]
+=== `assignment_relationships`
++++All instances of AssignmentRelationship-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.assignmentRelationships`
+| Cardinality
+| 1..*
+| Type
+| xref::class/AssignmentRelationship.adoc[`AssignmentRelationship`]
+
+
+|===
+
+//[discrete]
+[#association_relationships]
+=== `association_relationships`
++++All instances of AssociationRelationship-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.associationRelationships`
+| Cardinality
+| 1..*
+| Type
+| xref::class/AssociationRelationship.adoc[`AssociationRelationship`]
+
+
+|===
+
+//[discrete]
+[#business_actors]
+=== `business_actors`
++++All instances of BusinessActor-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.businessActors`
+| Cardinality
+| 1..*
+| Type
+| xref::class/BusinessActor.adoc[`BusinessActor`]
+
+
+|===
+
+//[discrete]
+[#business_functions]
+=== `business_functions`
++++All instances of BusinessFunction-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.businessFunctions`
+| Cardinality
+| 1..*
+| Type
+| xref::class/BusinessFunction.adoc[`BusinessFunction`]
+
+
+|===
+
+//[discrete]
+[#business_objects]
+=== `business_objects`
++++All instances of BusinessObject-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.businessObjects`
+| Cardinality
+| 1..*
+| Type
+| xref::class/BusinessObject.adoc[`BusinessObject`]
+
+
+|===
+
+//[discrete]
+[#business_processes]
+=== `business_processes`
++++All instances of BusinessProcess-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.businessProcesses`
+| Cardinality
+| 1..*
+| Type
+| xref::class/BusinessProcess.adoc[`BusinessProcess`]
+
+
+|===
+
+//[discrete]
+[#business_roles]
+=== `business_roles`
++++All instances of BusinessRole-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.businessRoles`
+| Cardinality
+| 1..*
+| Type
+| xref::class/BusinessRole.adoc[`BusinessRole`]
+
+
+|===
+
+//[discrete]
+[#capabilities]
+=== `capabilities`
++++All instances of Capability-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.capabilities`
+| Cardinality
+| 1..*
+| Type
+| xref::class/Capability.adoc[`Capability`]
+
+
+|===
+
+//[discrete]
+[#composition_relationships]
+=== `composition_relationships`
++++All instances of CompositionRelationship-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.compositionRelationships`
+| Cardinality
+| 1..*
+| Type
+| xref::class/CompositionRelationship.adoc[`CompositionRelationship`]
+
+
+|===
+
+//[discrete]
+[#conforms_to]
+=== `conforms_to`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/conformsTo[`dct:conformsTo`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#contact_point]
+=== `contact_point`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/contactPoint[`dct:contactPoint`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#data_objects]
+=== `data_objects`
++++All instances of DataObject-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.dataObjects`
+| Cardinality
+| 1..*
+| Type
+| xref::class/DataObject.adoc[`DataObject`]
+
+
+|===
+
+//[discrete]
+[#groupings]
+=== `groupings`
++++All instances of Grouping-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.groupings`
+| Cardinality
+| 1..*
+| Type
+| xref::class/Grouping.adoc[`Grouping`]
+
+
+|===
+
+//[discrete]
+[#identifier]
+=== `identifier`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/identifier[`dct:identifier`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#nodes]
+=== `nodes`
++++All instances of Node-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.nodes`
+| Cardinality
+| 1..*
+| Type
+| xref::class/Node.adoc[`Node`]
+
+
+|===
+
+//[discrete]
+[#realization_relationships]
+=== `realization_relationships`
++++All instances of RealizationRelationship-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.realizationRelationships`
+| Cardinality
+| 1..*
+| Type
+| xref::class/RealizationRelationship.adoc[`RealizationRelationship`]
+
+
+|===
+
+//[discrete]
+[#release_date]
+=== `release_date`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/issued[`dct:issued`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#serving_relationships]
+=== `serving_relationships`
++++All instances of ServingRelationship-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.servingRelationships`
+| Cardinality
+| 1..*
+| Type
+| xref::class/ServingRelationship.adoc[`ServingRelationship`]
+
+
+|===
+
+//[discrete]
+[#technology_collaborations]
+=== `technology_collaborations`
++++All instances of TechnologyCollaboration-s+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:LFEnergyModel.technologyCollaborations`
+| Cardinality
+| 1..*
+| Type
+| xref::class/TechnologyCollaboration.adoc[`TechnologyCollaboration`]
+
+
+|===
+
+//[discrete]
+[#version]
+=== `version`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://www.w3.org/2002/07/owl#versionInfo[`owl:versionInfo`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+

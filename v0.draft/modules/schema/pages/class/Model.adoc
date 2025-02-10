@@ -1,0 +1,29 @@
+= `Model`
+:toclevels: 4
+
+
++++A model is a collection of ``Concept``s.+++
+
+
+[cols="h,3",width=65%]
+|===
+| Type
+| Abstract class
+
+| URI
+| `this:Model`
+
+
+
+
+|===
+
+== Class hierarchy
+* *`Model`*
+ ** xref::class/LFEnergyModel.adoc[`LFEnergyModel`]
+
+
+== Slots
+
+
+This class has no slots.

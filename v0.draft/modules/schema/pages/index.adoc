@@ -1,0 +1,153 @@
+= Index
+
+== Classes
+
+[cols="1,2"]
+|===
+| Name | Description
+
+
+| xref::class/AccessRelationship.adoc[`AccessRelationship`]
+| +++The access relationship represents the ability of behavior and active structure elements to observe or act upon passive structure elements.+++
+
+| xref::class/ActiveStructureElement.adoc[`ActiveStructureElement`]
+| +++Active structure element.+++
+
+| xref::class/AggregationRelationship.adoc[`AggregationRelationship`]
+| +++The aggregation relationship represents that an element combines one or more other concepts.+++
+
+| xref::class/ApplicationComponent.adoc[`ApplicationComponent`]
+| +++An application component represents an encapsulation of application functionality aligned to implementation structure, which is modular and replaceable.+++
+
+| xref::class/ApplicationFunction.adoc[`ApplicationFunction`]
+| +++An application function represents automated behavior that can be performed by an application component.+++
+
+| xref::class/ApplicationService.adoc[`ApplicationService`]
+| +++An application service represents an explicitly defined exposed application behavior.+++
+
+| xref::class/AssignmentRelationship.adoc[`AssignmentRelationship`]
+| +++The assignment relationship represents the allocation of responsibility, performance of behavior, storage, or execution.+++
+
+| xref::class/AssociationRelationship.adoc[`AssociationRelationship`]
+| +++An association relationship represents an unspecified relationship, or one that is not represented by another ArchiMate relationship.+++
+
+| xref::class/BehaviorElement.adoc[`BehaviorElement`]
+| +++Behavior elements represent the dynamic aspects of the enterprise.+++
+
+| xref::class/BusinessActor.adoc[`BusinessActor`]
+| +++A business actor represents a business entity that is capable of performing behavior.+++
+
+| xref::class/BusinessFunction.adoc[`BusinessFunction`]
+| +++A business function represents a collection of business behavior based on a chosen set of criteria such as required business resources and/or competencies, and is managed or performed as a whole.+++
+
+| xref::class/BusinessObject.adoc[`BusinessObject`]
+| +++A business object represents a concept used within a particular business domain.+++
+
+| xref::class/BusinessProcess.adoc[`BusinessProcess`]
+| +++A business process represents a sequence of business behaviors that achieves a specific result such as a defined set of products or business services.+++
+
+| xref::class/BusinessRole.adoc[`BusinessRole`]
+| +++A business role represents the responsibility for performing specific behavior, to which an actor can be assigned, or the part an actor plays in a particular action or event.+++
+
+| xref::class/Capability.adoc[`Capability`]
+| +++A capability represents an ability that an active structure element, such as an organization, person, or system, possesses.+++
+
+| xref::class/Collaboration.adoc[`Collaboration`]
+| +++A collaboration represents an aggregate of two or more internal active structure elements, working together to perform some collective behavior.+++
+
+| xref::class/CompositeElement.adoc[`CompositeElement`]
+| +++Composite elements consist of other concepts, possibly from multiple aspects or layers of the language.+++
+
+| xref::class/CompositionRelationship.adoc[`CompositionRelationship`]
+| +++The composition relationship represents that an element consists of one or more other concepts.+++
+
+| xref::class/Concept.adoc[`Concept`]
+| +++A concept is either an element or a relationship.+++
+
+| xref::class/DataObject.adoc[`DataObject`]
+| +++A data object represents data structured for automated processing.+++
+
+| xref::class/DependencyRelationship.adoc[`DependencyRelationship`]
+| +++Models how elements are used to support other elements.+++
+
+| xref::class/Element.adoc[`Element`]
+| +++An element is either a behavior element, a structure element, a motivation element, or a composite element.+++
+
+| xref::class/Event.adoc[`Event`]
+| +++An event represents a state change.+++
+
+| xref::class/ExternalActiveStructureElement.adoc[`ExternalActiveStructureElement`]
+| +++An external active structure element, called an interface, represents a point of access where one or more services are provided to the environment.+++
+
+| xref::class/ExternalBehaviorElement.adoc[`ExternalBehaviorElement`]
+| +++An external behavior element, called a service, represents an explicitly defined exposed behavior.+++
+
+| xref::class/Function.adoc[`Function`]
+| +++Represents a collection of behavior based on specific criteria, such as required resources, competencies, or location, and is managed, performed, or implemented as a whole.+++
+
+| xref::class/Grouping.adoc[`Grouping`]
+| +++The grouping element aggregates or composes concepts that belong together based on some common characteristic. To create a ``Grouping``, associate an ``Element`` through a ``Relationship`` to the ``Grouping``.+++
+
+| xref::class/Interface.adoc[`Interface`]
+| +++An external active structure element, called an interface, represents a point of access where one or more services are provided to the environment.+++
+
+| xref::class/InternalActiveStructureElement.adoc[`InternalActiveStructureElement`]
+| +++An internal active structure element represents an entity that is capable of performing behavior.+++
+
+| xref::class/InternalBehaviorElement.adoc[`InternalBehaviorElement`]
+| +++An internal behavior element represents a unit of activity that can be performed by one or more active structure elements.+++
+
+| xref::class/LFEnergyModel.adoc[`LFEnergyModel`]
+| +++Instance of the LFEnergy ``Functional Architecture`` metamodel.+++
+
+| xref::class/Model.adoc[`Model`]
+| +++A model is a collection of ``Concept``s.+++
+
+| xref::class/Node.adoc[`Node`]
+| +++A node represents a computational or physical resource that hosts, manipulates, or interacts with other computational or physical resources.+++
+
+| xref::class/PassiveStructureElement.adoc[`PassiveStructureElement`]
+| +++A passive structure element represents an element on which behavior is performed.+++
+
+| xref::class/Process.adoc[`Process`]
+| +++Represents a sequence of behaviors that achieves a specific result.+++
+
+| xref::class/RealizationRelationship.adoc[`RealizationRelationship`]
+| +++The realization relationship represents that an element plays a critical role in the creation, achievement, sustenance, or operation of a more abstract element.+++
+
+| xref::class/Relationship.adoc[`Relationship`]
+| +++A core set of generic relationships, each of which can connect a set of source and target concepts. This class represents the ``predicate``.+++
+
+| xref::class/Service.adoc[`Service`]
+| +++Represents an explicitly defined exposed behavior.+++
+
+| xref::class/ServingRelationship.adoc[`ServingRelationship`]
+| +++The serving relationship represents that an element provides its functionality to another element.+++
+
+| xref::class/StructuralRelationship.adoc[`StructuralRelationship`]
+| +++Models the static construction or composition of concepts of the same or different types.+++
+
+| xref::class/StructureElement.adoc[`StructureElement`]
+| +++Structure elements can be subdivided into active structure elements and passive structure elements. Active structure elements can be further subdivided into external active structure elements (also called interfaces) and internal active structure elements.+++
+
+| xref::class/TechnologyCollaboration.adoc[`TechnologyCollaboration`]
+| +++A technology collaboration represents an aggregate of two or more technology internal active structure elements that work together to perform collective technology behavior.+++
+
+|===
+
+== Types
+
+No types are defined in the schema.
+
+
+== Enumerations
+
+
+[cols="1,2"]
+|===
+| Name | Description
+
+| xref::enumeration/AccessKind.adoc[`AccessKind`]
+| +++Kind of access relationship.+++
+
+|===

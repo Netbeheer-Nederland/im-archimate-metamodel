@@ -1,0 +1,174 @@
+[.truncate]
+* Information model
+** xref::index.adoc[Index]
+** Classes
+*** xref::class/LFEnergyModel.adoc[`LFEnergyModel` (root)]
+
+*** xref::class/AccessRelationship.adoc[`AccessRelationship`]
+
+
+
+*** xref::class/ActiveStructureElement.adoc[`ActiveStructureElement`]
+
+
+
+*** xref::class/AggregationRelationship.adoc[`AggregationRelationship`]
+
+
+
+*** xref::class/ApplicationComponent.adoc[`ApplicationComponent`]
+
+
+
+*** xref::class/ApplicationFunction.adoc[`ApplicationFunction`]
+
+
+
+*** xref::class/ApplicationService.adoc[`ApplicationService`]
+
+
+
+*** xref::class/AssignmentRelationship.adoc[`AssignmentRelationship`]
+
+
+
+*** xref::class/AssociationRelationship.adoc[`AssociationRelationship`]
+
+
+
+*** xref::class/BehaviorElement.adoc[`BehaviorElement`]
+
+
+
+*** xref::class/BusinessActor.adoc[`BusinessActor`]
+
+
+
+*** xref::class/BusinessFunction.adoc[`BusinessFunction`]
+
+
+
+*** xref::class/BusinessObject.adoc[`BusinessObject`]
+
+
+
+*** xref::class/BusinessProcess.adoc[`BusinessProcess`]
+
+
+
+*** xref::class/BusinessRole.adoc[`BusinessRole`]
+
+
+
+*** xref::class/Capability.adoc[`Capability`]
+
+
+
+*** xref::class/Collaboration.adoc[`Collaboration`]
+
+
+
+*** xref::class/CompositeElement.adoc[`CompositeElement`]
+
+
+
+*** xref::class/CompositionRelationship.adoc[`CompositionRelationship`]
+
+
+
+*** xref::class/Concept.adoc[`Concept`]
+
+
+
+*** xref::class/DataObject.adoc[`DataObject`]
+
+
+
+*** xref::class/DependencyRelationship.adoc[`DependencyRelationship`]
+
+
+
+*** xref::class/Element.adoc[`Element`]
+
+
+
+*** xref::class/Event.adoc[`Event`]
+
+
+
+*** xref::class/ExternalActiveStructureElement.adoc[`ExternalActiveStructureElement`]
+
+
+
+*** xref::class/ExternalBehaviorElement.adoc[`ExternalBehaviorElement`]
+
+
+
+*** xref::class/Function.adoc[`Function`]
+
+
+
+*** xref::class/Grouping.adoc[`Grouping`]
+
+
+
+*** xref::class/Interface.adoc[`Interface`]
+
+
+
+*** xref::class/InternalActiveStructureElement.adoc[`InternalActiveStructureElement`]
+
+
+
+*** xref::class/InternalBehaviorElement.adoc[`InternalBehaviorElement`]
+
+
+
+
+*** xref::class/Model.adoc[`Model`]
+
+
+
+*** xref::class/Node.adoc[`Node`]
+
+
+
+*** xref::class/PassiveStructureElement.adoc[`PassiveStructureElement`]
+
+
+
+*** xref::class/Process.adoc[`Process`]
+
+
+
+*** xref::class/RealizationRelationship.adoc[`RealizationRelationship`]
+
+
+
+*** xref::class/Relationship.adoc[`Relationship`]
+
+
+
+*** xref::class/Service.adoc[`Service`]
+
+
+
+*** xref::class/ServingRelationship.adoc[`ServingRelationship`]
+
+
+
+*** xref::class/StructuralRelationship.adoc[`StructuralRelationship`]
+
+
+
+*** xref::class/StructureElement.adoc[`StructureElement`]
+
+
+
+*** xref::class/TechnologyCollaboration.adoc[`TechnologyCollaboration`]
+
+
+
+
+** Enumerations
+*** xref::enumeration/AccessKind.adoc[`AccessKind`]

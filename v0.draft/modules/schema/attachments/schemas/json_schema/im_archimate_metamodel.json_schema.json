@@ -1,0 +1,959 @@
+{
+    "$defs": {
+        "AccessKind": {
+            "description": "Kind of access relationship.",
+            "enum": [
+                "read",
+                "read_write",
+                "write"
+            ],
+            "title": "AccessKind",
+            "type": "string"
+        },
+        "AccessRelationship": {
+            "additionalProperties": false,
+            "description": "The access relationship represents the ability of behavior and active structure elements to observe or act upon passive structure elements.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "object": {
+                    "description": "Target element or relationship for the relationship.",
+                    "type": "string"
+                },
+                "subject": {
+                    "description": "Source element for the relationship",
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/$defs/AccessKind",
+                    "description": "Type of access relation."
+                }
+            },
+            "required": [
+                "type",
+                "subject",
+                "object",
+                "id"
+            ],
+            "title": "AccessRelationship",
+            "type": "object"
+        },
+        "AggregationRelationship": {
+            "additionalProperties": false,
+            "description": "The aggregation relationship represents that an element combines one or more other concepts.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "object": {
+                    "description": "Target element or relationship for the relationship.",
+                    "type": "string"
+                },
+                "subject": {
+                    "description": "Source element for the relationship",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "subject",
+                "object",
+                "id"
+            ],
+            "title": "AggregationRelationship",
+            "type": "object"
+        },
+        "ApplicationComponent": {
+            "additionalProperties": false,
+            "description": "An application component represents an encapsulation of application functionality aligned to implementation structure, which is modular and replaceable.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "ApplicationComponent",
+            "type": "object"
+        },
+        "ApplicationFunction": {
+            "additionalProperties": false,
+            "description": "An application function represents automated behavior that can be performed by an application component.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "ApplicationFunction",
+            "type": "object"
+        },
+        "ApplicationService": {
+            "additionalProperties": false,
+            "description": "An application service represents an explicitly defined exposed application behavior.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "ApplicationService",
+            "type": "object"
+        },
+        "AssignmentRelationship": {
+            "additionalProperties": false,
+            "description": "The assignment relationship represents the allocation of responsibility, performance of behavior, storage, or execution.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "object": {
+                    "description": "Target element or relationship for the relationship.",
+                    "type": "string"
+                },
+                "subject": {
+                    "description": "Source element for the relationship",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "subject",
+                "object",
+                "id"
+            ],
+            "title": "AssignmentRelationship",
+            "type": "object"
+        },
+        "AssociationRelationship": {
+            "additionalProperties": false,
+            "description": "An association relationship represents an unspecified relationship, or one that is not represented by another ArchiMate relationship.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "object": {
+                    "description": "Target element or relationship for the relationship.",
+                    "type": "string"
+                },
+                "subject": {
+                    "description": "Source element for the relationship",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "subject",
+                "object",
+                "id"
+            ],
+            "title": "AssociationRelationship",
+            "type": "object"
+        },
+        "BusinessActor": {
+            "additionalProperties": false,
+            "description": "A business actor represents a business entity that is capable of performing behavior.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "BusinessActor",
+            "type": "object"
+        },
+        "BusinessFunction": {
+            "additionalProperties": false,
+            "description": "A business function represents a collection of business behavior based on a chosen set of criteria such as required business resources and/or competencies, and is managed or performed as a whole.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "BusinessFunction",
+            "type": "object"
+        },
+        "BusinessObject": {
+            "additionalProperties": false,
+            "description": "A business object represents a concept used within a particular business domain.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "BusinessObject",
+            "type": "object"
+        },
+        "BusinessProcess": {
+            "additionalProperties": false,
+            "description": "A business process represents a sequence of business behaviors that achieves a specific result such as a defined set of products or business services.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "BusinessProcess",
+            "type": "object"
+        },
+        "BusinessRole": {
+            "additionalProperties": false,
+            "description": "A business role represents the responsibility for performing specific behavior, to which an actor can be assigned, or the part an actor plays in a particular action or event.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "BusinessRole",
+            "type": "object"
+        },
+        "Capability": {
+            "additionalProperties": false,
+            "description": "A capability represents an ability that an active structure element, such as an organization, person, or system, possesses.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "Capability",
+            "type": "object"
+        },
+        "CompositionRelationship": {
+            "additionalProperties": false,
+            "description": "The composition relationship represents that an element consists of one or more other concepts.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "object": {
+                    "description": "Target element or relationship for the relationship.",
+                    "type": "string"
+                },
+                "subject": {
+                    "description": "Source element for the relationship",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "subject",
+                "object",
+                "id"
+            ],
+            "title": "CompositionRelationship",
+            "type": "object"
+        },
+        "DataObject": {
+            "additionalProperties": false,
+            "description": "A data object represents data structured for automated processing.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "DataObject",
+            "type": "object"
+        },
+        "Grouping": {
+            "additionalProperties": false,
+            "description": "The grouping element aggregates or composes concepts that belong together based on some common characteristic. To create a ``Grouping``, associate an ``Element`` through a ``Relationship`` to the ``Grouping``.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "Grouping",
+            "type": "object"
+        },
+        "LFEnergyModel": {
+            "additionalProperties": false,
+            "description": "Instance of the LFEnergy ``Functional Architecture`` metamodel.",
+            "properties": {
+                "access_relationships": {
+                    "description": "All instances of AccessRelationship-s",
+                    "items": {
+                        "$ref": "#/$defs/AccessRelationship"
+                    },
+                    "type": "array"
+                },
+                "aggregation_relationships": {
+                    "description": "All instances of AggregationRelationship-s",
+                    "items": {
+                        "$ref": "#/$defs/AggregationRelationship"
+                    },
+                    "type": "array"
+                },
+                "application_components": {
+                    "description": "All instances of ApplicationComponent-s",
+                    "items": {
+                        "$ref": "#/$defs/ApplicationComponent"
+                    },
+                    "type": "array"
+                },
+                "application_functions": {
+                    "description": "All instances of ApplicationFunction-s",
+                    "items": {
+                        "$ref": "#/$defs/ApplicationFunction"
+                    },
+                    "type": "array"
+                },
+                "application_services": {
+                    "description": "All instances of ApplicationService-s",
+                    "items": {
+                        "$ref": "#/$defs/ApplicationService"
+                    },
+                    "type": "array"
+                },
+                "assignment_relationships": {
+                    "description": "All instances of AssignmentRelationship-s",
+                    "items": {
+                        "$ref": "#/$defs/AssignmentRelationship"
+                    },
+                    "type": "array"
+                },
+                "association_relationships": {
+                    "description": "All instances of AssociationRelationship-s",
+                    "items": {
+                        "$ref": "#/$defs/AssociationRelationship"
+                    },
+                    "type": "array"
+                },
+                "business_actors": {
+                    "description": "All instances of BusinessActor-s",
+                    "items": {
+                        "$ref": "#/$defs/BusinessActor"
+                    },
+                    "type": "array"
+                },
+                "business_functions": {
+                    "description": "All instances of BusinessFunction-s",
+                    "items": {
+                        "$ref": "#/$defs/BusinessFunction"
+                    },
+                    "type": "array"
+                },
+                "business_objects": {
+                    "description": "All instances of BusinessObject-s",
+                    "items": {
+                        "$ref": "#/$defs/BusinessObject"
+                    },
+                    "type": "array"
+                },
+                "business_processes": {
+                    "description": "All instances of BusinessProcess-s",
+                    "items": {
+                        "$ref": "#/$defs/BusinessProcess"
+                    },
+                    "type": "array"
+                },
+                "business_roles": {
+                    "description": "All instances of BusinessRole-s",
+                    "items": {
+                        "$ref": "#/$defs/BusinessRole"
+                    },
+                    "type": "array"
+                },
+                "capabilities": {
+                    "description": "All instances of Capability-s",
+                    "items": {
+                        "$ref": "#/$defs/Capability"
+                    },
+                    "type": "array"
+                },
+                "composition_relationships": {
+                    "description": "All instances of CompositionRelationship-s",
+                    "items": {
+                        "$ref": "#/$defs/CompositionRelationship"
+                    },
+                    "type": "array"
+                },
+                "conforms_to": {},
+                "contact_point": {},
+                "data_objects": {
+                    "description": "All instances of DataObject-s",
+                    "items": {
+                        "$ref": "#/$defs/DataObject"
+                    },
+                    "type": "array"
+                },
+                "groupings": {
+                    "description": "All instances of Grouping-s",
+                    "items": {
+                        "$ref": "#/$defs/Grouping"
+                    },
+                    "type": "array"
+                },
+                "identifier": {},
+                "nodes": {
+                    "description": "All instances of Node-s",
+                    "items": {
+                        "$ref": "#/$defs/Node"
+                    },
+                    "type": "array"
+                },
+                "realization_relationships": {
+                    "description": "All instances of RealizationRelationship-s",
+                    "items": {
+                        "$ref": "#/$defs/RealizationRelationship"
+                    },
+                    "type": "array"
+                },
+                "release_date": {},
+                "serving_relationships": {
+                    "description": "All instances of ServingRelationship-s",
+                    "items": {
+                        "$ref": "#/$defs/ServingRelationship"
+                    },
+                    "type": "array"
+                },
+                "technology_collaborations": {
+                    "description": "All instances of TechnologyCollaboration-s",
+                    "items": {
+                        "$ref": "#/$defs/TechnologyCollaboration"
+                    },
+                    "type": "array"
+                },
+                "version": {}
+            },
+            "required": [
+                "identifier",
+                "conforms_to",
+                "contact_point",
+                "release_date",
+                "version",
+                "groupings",
+                "capabilities",
+                "business_actors",
+                "business_roles",
+                "business_functions",
+                "business_processes",
+                "business_objects",
+                "application_services",
+                "application_functions",
+                "application_components",
+                "data_objects",
+                "technology_collaborations",
+                "nodes",
+                "realization_relationships",
+                "assignment_relationships",
+                "access_relationships",
+                "serving_relationships",
+                "association_relationships",
+                "composition_relationships",
+                "aggregation_relationships"
+            ],
+            "title": "LFEnergyModel",
+            "type": "object"
+        },
+        "Node": {
+            "additionalProperties": false,
+            "description": "A node represents a computational or physical resource that hosts, manipulates, or interacts with other computational or physical resources.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "Node",
+            "type": "object"
+        },
+        "RealizationRelationship": {
+            "additionalProperties": false,
+            "description": "The realization relationship represents that an element plays a critical role in the creation, achievement, sustenance, or operation of a more abstract element.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "object": {
+                    "description": "Target element or relationship for the relationship.",
+                    "type": "string"
+                },
+                "subject": {
+                    "description": "Source element for the relationship",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "subject",
+                "object",
+                "id"
+            ],
+            "title": "RealizationRelationship",
+            "type": "object"
+        },
+        "ServingRelationship": {
+            "additionalProperties": false,
+            "description": "The serving relationship represents that an element provides its functionality to another element.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "object": {
+                    "description": "Target element or relationship for the relationship.",
+                    "type": "string"
+                },
+                "subject": {
+                    "description": "Source element for the relationship",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "subject",
+                "object",
+                "id"
+            ],
+            "title": "ServingRelationship",
+            "type": "object"
+        },
+        "TechnologyCollaboration": {
+            "additionalProperties": false,
+            "description": "A technology collaboration represents an aggregate of two or more technology internal active structure elements that work together to perform collective technology behavior.",
+            "properties": {
+                "description": {
+                    "description": "Description for the ``Concept``.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier for ``Concept``s.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name for the ``Element``.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "TechnologyCollaboration",
+            "type": "object"
+        }
+    },
+    "$id": "http://data.netbeheernederland.nl/information-model/im-archimate-metamodel",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "description": "Instance of the LFEnergy ``Functional Architecture`` metamodel.",
+    "metamodel_version": "1.7.0",
+    "properties": {
+        "access_relationships": {
+            "description": "All instances of AccessRelationship-s",
+            "items": {
+                "$ref": "#/$defs/AccessRelationship"
+            },
+            "type": "array"
+        },
+        "aggregation_relationships": {
+            "description": "All instances of AggregationRelationship-s",
+            "items": {
+                "$ref": "#/$defs/AggregationRelationship"
+            },
+            "type": "array"
+        },
+        "application_components": {
+            "description": "All instances of ApplicationComponent-s",
+            "items": {
+                "$ref": "#/$defs/ApplicationComponent"
+            },
+            "type": "array"
+        },
+        "application_functions": {
+            "description": "All instances of ApplicationFunction-s",
+            "items": {
+                "$ref": "#/$defs/ApplicationFunction"
+            },
+            "type": "array"
+        },
+        "application_services": {
+            "description": "All instances of ApplicationService-s",
+            "items": {
+                "$ref": "#/$defs/ApplicationService"
+            },
+            "type": "array"
+        },
+        "assignment_relationships": {
+            "description": "All instances of AssignmentRelationship-s",
+            "items": {
+                "$ref": "#/$defs/AssignmentRelationship"
+            },
+            "type": "array"
+        },
+        "association_relationships": {
+            "description": "All instances of AssociationRelationship-s",
+            "items": {
+                "$ref": "#/$defs/AssociationRelationship"
+            },
+            "type": "array"
+        },
+        "business_actors": {
+            "description": "All instances of BusinessActor-s",
+            "items": {
+                "$ref": "#/$defs/BusinessActor"
+            },
+            "type": "array"
+        },
+        "business_functions": {
+            "description": "All instances of BusinessFunction-s",
+            "items": {
+                "$ref": "#/$defs/BusinessFunction"
+            },
+            "type": "array"
+        },
+        "business_objects": {
+            "description": "All instances of BusinessObject-s",
+            "items": {
+                "$ref": "#/$defs/BusinessObject"
+            },
+            "type": "array"
+        },
+        "business_processes": {
+            "description": "All instances of BusinessProcess-s",
+            "items": {
+                "$ref": "#/$defs/BusinessProcess"
+            },
+            "type": "array"
+        },
+        "business_roles": {
+            "description": "All instances of BusinessRole-s",
+            "items": {
+                "$ref": "#/$defs/BusinessRole"
+            },
+            "type": "array"
+        },
+        "capabilities": {
+            "description": "All instances of Capability-s",
+            "items": {
+                "$ref": "#/$defs/Capability"
+            },
+            "type": "array"
+        },
+        "composition_relationships": {
+            "description": "All instances of CompositionRelationship-s",
+            "items": {
+                "$ref": "#/$defs/CompositionRelationship"
+            },
+            "type": "array"
+        },
+        "conforms_to": {},
+        "contact_point": {},
+        "data_objects": {
+            "description": "All instances of DataObject-s",
+            "items": {
+                "$ref": "#/$defs/DataObject"
+            },
+            "type": "array"
+        },
+        "groupings": {
+            "description": "All instances of Grouping-s",
+            "items": {
+                "$ref": "#/$defs/Grouping"
+            },
+            "type": "array"
+        },
+        "identifier": {},
+        "nodes": {
+            "description": "All instances of Node-s",
+            "items": {
+                "$ref": "#/$defs/Node"
+            },
+            "type": "array"
+        },
+        "realization_relationships": {
+            "description": "All instances of RealizationRelationship-s",
+            "items": {
+                "$ref": "#/$defs/RealizationRelationship"
+            },
+            "type": "array"
+        },
+        "release_date": {},
+        "serving_relationships": {
+            "description": "All instances of ServingRelationship-s",
+            "items": {
+                "$ref": "#/$defs/ServingRelationship"
+            },
+            "type": "array"
+        },
+        "technology_collaborations": {
+            "description": "All instances of TechnologyCollaboration-s",
+            "items": {
+                "$ref": "#/$defs/TechnologyCollaboration"
+            },
+            "type": "array"
+        },
+        "version": {}
+    },
+    "required": [
+        "identifier",
+        "conforms_to",
+        "contact_point",
+        "release_date",
+        "version",
+        "groupings",
+        "capabilities",
+        "business_actors",
+        "business_roles",
+        "business_functions",
+        "business_processes",
+        "business_objects",
+        "application_services",
+        "application_functions",
+        "application_components",
+        "data_objects",
+        "technology_collaborations",
+        "nodes",
+        "realization_relationships",
+        "assignment_relationships",
+        "access_relationships",
+        "serving_relationships",
+        "association_relationships",
+        "composition_relationships",
+        "aggregation_relationships"
+    ],
+    "title": "im-archimate-metamodel",
+    "type": "object",
+    "version": "v0.draft"
+}
