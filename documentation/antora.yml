@@ -1,0 +1,5 @@
+name: im-archimate-metamodel
+title: Archimate 3.2 Metamodel
+version: true
+nav:
+- modules/ROOT/nav.adoc

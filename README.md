@@ -1,0 +1,3 @@
+# Archimate 3.2 Metamodel
+
+...
