@@ -18,4 +18,503 @@ prefixes:
   owl: http://www.w3.org/2002/07/owl#
   skos: http://www.w3.org/2004/02/skos/core#
   this: http://data.netbeheernederland.nl/information-model/im-archimate-metamodel/def#
-classes: {}
+enums:
+  AccessKind:
+    description: Kind of access relationship.
+    enum_uri: this:AccessKind
+    permissible_values:
+      read:
+        description: Read access.
+        meaning: this:AccessKind.read
+      read_write:
+        description: Read/write access.
+        meaning: this:AccessKind.readWrite
+      write:
+        description: Write access.
+        meaning: this:AccessKind.write
+classes:
+  Model:
+    class_uri: this:Model
+    abstract: true
+    description: A model is a collection of ``Concept``s.
+
+  LFEnergyModel:
+    class_uri: this:LFEnergyModel
+    is_a: Model
+    tree_root: true
+    description: Instance of the LFEnergy ``Functional Architecture``
+      metamodel.
+    attributes:
+      identifier:
+        slot_uri: dct:identifier
+        multivalued: false
+        required: true
+      conforms_to:
+        slot_uri: dct:conformsTo
+        multivalued: false
+        required: true
+      contact_point:
+        slot_uri: dct:contactPoint
+        multivalued: false
+        required: true
+      release_date:
+        slot_uri: dct:issued
+        multivalued: false
+        required: true
+      version:
+        slot_uri: owl:versionInfo
+        multivalued: false
+        required: true
+      groupings:
+        description: All instances of Grouping-s
+        slot_uri: this:LFEnergyModel.groupings
+        multivalued: true
+        range: Grouping
+        required: true
+        inlined_as_list: true
+      capabilities:
+        description: All instances of Capability-s
+        slot_uri: this:LFEnergyModel.capabilities
+        multivalued: true
+        range: Capability
+        required: true
+        inlined_as_list: true
+      business_actors:
+        description: All instances of BusinessActor-s
+        slot_uri: this:LFEnergyModel.businessActors
+        multivalued: true
+        range: BusinessActor
+        required: true
+        inlined_as_list: true
+      business_roles:
+        description: All instances of BusinessRole-s
+        slot_uri: this:LFEnergyModel.businessRoles
+        multivalued: true
+        range: BusinessRole
+        required: true
+        inlined_as_list: true
+      business_functions:
+        description: All instances of BusinessFunction-s
+        slot_uri: this:LFEnergyModel.businessFunctions
+        multivalued: true
+        range: BusinessFunction
+        required: true
+        inlined_as_list: true
+      business_processes:
+        description: All instances of BusinessProcess-s
+        slot_uri: this:LFEnergyModel.businessProcesses
+        multivalued: true
+        range: BusinessProcess
+        required: true
+        inlined_as_list: true
+      business_objects:
+        description: All instances of BusinessObject-s
+        slot_uri: this:LFEnergyModel.businessObjects
+        multivalued: true
+        range: BusinessObject
+        required: true
+        inlined_as_list: true
+      application_services:
+        description: All instances of ApplicationService-s
+        slot_uri: this:LFEnergyModel.applicationServices
+        multivalued: true
+        range: ApplicationService
+        required: true
+        inlined_as_list: true
+      application_functions:
+        description: All instances of ApplicationFunction-s
+        slot_uri: this:LFEnergyModel.applicationFunctions
+        multivalued: true
+        range: ApplicationFunction
+        required: true
+        inlined_as_list: true
+      application_components:
+        description: All instances of ApplicationComponent-s
+        slot_uri: this:LFEnergyModel.applicationComponents
+        multivalued: true
+        range: ApplicationComponent
+        required: true
+        inlined_as_list: true
+      data_objects:
+        description: All instances of DataObject-s
+        slot_uri: this:LFEnergyModel.dataObjects
+        multivalued: true
+        range: DataObject
+        required: true
+        inlined_as_list: true
+      technology_collaborations:
+        description: All instances of TechnologyCollaboration-s
+        slot_uri: this:LFEnergyModel.technologyCollaborations
+        multivalued: true
+        range: TechnologyCollaboration
+        required: true
+        inlined_as_list: true
+      nodes:
+        description: All instances of Node-s
+        slot_uri: this:LFEnergyModel.nodes
+        multivalued: true
+        range: Node
+        required: true
+        inlined_as_list: true
+      realization_relationships:
+        description: All instances of RealizationRelationship-s
+        slot_uri: this:LFEnergyModel.realizationRelationships
+        multivalued: true
+        range: RealizationRelationship
+        required: true
+        inlined_as_list: true
+      assignment_relationships:
+        description: All instances of AssignmentRelationship-s
+        slot_uri: this:LFEnergyModel.assignmentRelationships
+        multivalued: true
+        range: AssignmentRelationship
+        required: true
+        inlined_as_list: true
+      access_relationships:
+        description: All instances of AccessRelationship-s
+        slot_uri: this:LFEnergyModel.accessRelationships
+        multivalued: true
+        range: AccessRelationship
+        required: true
+        inlined_as_list: true
+      serving_relationships:
+        description: All instances of ServingRelationship-s
+        slot_uri: this:LFEnergyModel.servingRelationships
+        multivalued: true
+        range: ServingRelationship
+        required: true
+        inlined_as_list: true
+      association_relationships:
+        description: All instances of AssociationRelationship-s
+        slot_uri: this:LFEnergyModel.associationRelationships
+        multivalued: true
+        range: AssociationRelationship
+        required: true
+        inlined_as_list: true
+      composition_relationships:
+        description: All instances of CompositionRelationship-s
+        slot_uri: this:LFEnergyModel.compositionRelationships
+        multivalued: true
+        range: CompositionRelationship
+        required: true
+        inlined_as_list: true
+      aggregation_relationships:
+        description: All instances of AggregationRelationship-s
+        slot_uri: this:LFEnergyModel.aggregationRelationships
+        multivalued: true
+        range: AggregationRelationship
+        required: true
+        inlined_as_list: true
+
+  Concept:
+    class_uri: this:Concept
+    abstract: true
+    description: A concept is either an element or a relationship.
+    attributes:
+      id:
+        slot_uri: this:Concept.id
+        range: string
+        identifier: true
+        multivalued: false
+        description: Unique identifier for ``Concept``s.
+      description:
+        slot_uri: this:Concept.description
+        range: string
+        required: false
+        multivalued: false
+        description: Description for the ``Concept``.
+
+  Element:
+    class_uri: this:Element
+    is_a: Concept
+    abstract: true
+    description: An element is either a behavior element, a structure element,
+      a motivation element, or a composite element.
+    attributes:
+      name:
+        slot_uri: this:Element.name
+        range: string
+        required: true
+        multivalued: false
+        description: Name for the ``Element``.
+
+  Relationship:
+    class_uri: this:Relationship
+    is_a: Concept
+    abstract: true
+    represents_relationship: true
+    description: A core set of generic relationships, each of which can connect
+      a set of source and target concepts. This class represents the
+      ``predicate``.
+    attributes:
+      subject:
+        slot_uri: this:Relationship.subject
+        range: Element
+        required: true
+        multivalued: false
+        description: Source element for the relationship
+      object:
+        slot_uri: this:Relationship.object
+        range: Concept
+        required: true
+        multivalued: false
+        description: Target element or relationship for the relationship.
+
+  BehaviorElement:
+    class_uri: this:BehaviorElement
+    is_a: Element
+    abstract: true
+    description: Behavior elements represent the dynamic aspects of the
+      enterprise.
+
+  ExternalBehaviorElement:
+    class_uri: this:ExternalBehaviorElement
+    is_a: BehaviorElement
+    abstract: true
+    description: An external behavior element, called a service, represents an
+      explicitly defined exposed behavior.
+
+  InternalBehaviorElement:
+    class_uri: this:InternalBehaviorElement
+    is_a: BehaviorElement
+    abstract: true
+    description: An internal behavior element represents a unit of activity
+      that can be performed by one or more active structure elements.
+
+  Event:
+    class_uri: this:Event
+    is_a: BehaviorElement
+    abstract: true
+    description: An event represents a state change.
+
+  StructureElement:
+    class_uri: this:StructureElement
+    is_a: Element
+    abstract: true
+    description: Structure elements can be subdivided into active structure
+      elements and passive structure elements. Active structure elements can be
+      further subdivided into external active structure elements (also called
+      interfaces) and internal active structure elements.
+
+  ActiveStructureElement:
+    class_uri: this:ActiveStructureElement
+    is_a: StructureElement
+    abstract: true
+    description: Active structure element.
+
+  PassiveStructureElement:
+    class_uri: this:PassiveStructureElement
+    is_a: StructureElement
+    abstract: true
+    description: A passive structure element represents an element on which
+      behavior is performed.
+
+  InternalActiveStructureElement:
+    class_uri: this:InternalActiveStructureElement
+    is_a: ActiveStructureElement
+    abstract: true
+    description: An internal active structure element represents an entity that
+      is capable of performing behavior.
+
+  ExternalActiveStructureElement:
+    class_uri: this:ExternalActiveStructureElement
+    is_a: ActiveStructureElement
+    abstract: true
+    description: An external active structure element, called an interface,
+      represents a point of access where one or more services are provided to
+      the environment.
+
+  Interface:
+    class_uri: this:Interface
+    is_a: ExternalActiveStructureElement
+    abstract: true
+    description: An external active structure element, called an interface,
+      represents a point of access where one or more services are provided to
+      the environment.
+
+  Process:
+    class_uri: this:Process
+    is_a: InternalBehaviorElement
+    abstract: true
+    description: Represents a sequence of behaviors that achieves a specific
+      result.
+
+  Function:
+    class_uri: this:Function
+    is_a: InternalBehaviorElement
+    abstract: true
+    description: Represents a collection of behavior based on specific
+      criteria, such as required resources, competencies, or location, and is
+      managed, performed, or implemented as a whole.
+
+  Service:
+    class_uri: this:Service
+    is_a: ExternalBehaviorElement
+    abstract: true
+    description: Represents an explicitly defined exposed behavior.
+
+  Collaboration:
+    class_uri: this:Collaboration
+    is_a: InternalActiveStructureElement
+    abstract: true
+    description: A collaboration represents an aggregate of two or more
+      internal active structure elements, working together to perform some
+      collective behavior.
+
+  CompositeElement:
+    class_uri: this:CompositeElement
+    is_a: Element
+    abstract: true
+    description: Composite elements consist of other concepts, possibly from
+      multiple aspects or layers of the language.
+
+  Grouping:
+    class_uri: this:Grouping
+    is_a: CompositeElement
+    description: The grouping element aggregates or composes concepts that
+      belong together based on some common characteristic. To create a
+      ``Grouping``, associate an ``Element`` through a ``Relationship`` to the
+      ``Grouping``.
+
+  Capability:
+    class_uri: this:Capability
+    is_a: InternalBehaviorElement
+    description: A capability represents an ability that an active structure
+      element, such as an organization, person, or system, possesses.
+
+  BusinessActor:
+    class_uri: this:BusinessActor
+    is_a: InternalActiveStructureElement
+    description: A business actor represents a business entity that is capable
+      of performing behavior.
+
+  BusinessRole:
+    class_uri: this:BusinessRole
+    is_a: InternalActiveStructureElement
+    description: A business role represents the responsibility for performing
+      specific behavior, to which an actor can be assigned, or the part an
+      actor plays in a particular action or event.
+
+  BusinessFunction:
+    class_uri: this:BusinessFunction
+    is_a: Function
+    description: A business function represents a collection of business
+      behavior based on a chosen set of criteria such as required business
+      resources and/or competencies, and is managed or performed as a whole.
+
+  BusinessProcess:
+    class_uri: this:BusinessProcess
+    is_a: Process
+    description: A business process represents a sequence of business behaviors
+      that achieves a specific result such as a defined set of products or
+      business services.
+
+  BusinessObject:
+    class_uri: this:BusinessObject
+    is_a: PassiveStructureElement
+    description: A business object represents a concept used within a
+      particular business domain.
+
+  ApplicationService:
+    class_uri: this:ApplicationService
+    is_a: Service
+    description: An application service represents an explicitly defined
+      exposed application behavior.
+
+  ApplicationFunction:
+    class_uri: this:ApplicationFunction
+    is_a: Function
+    description: An application function represents automated behavior that can
+      be performed by an application component.
+
+  ApplicationComponent:
+    class_uri: this:ApplicationComponent
+    is_a: InternalActiveStructureElement
+    description: An application component represents an encapsulation of
+      application functionality aligned to implementation structure, which is
+      modular and replaceable.
+
+  DataObject:
+    class_uri: this:DataObject
+    is_a: PassiveStructureElement
+    description: A data object represents data structured for automated
+      processing.
+
+  TechnologyCollaboration:
+    class_uri: this:TechnologyCollaboration
+    is_a: Collaboration
+    description: A technology collaboration represents an aggregate of two or
+      more technology internal active structure elements that work together to
+      perform collective technology behavior.
+
+  Node:
+    class_uri: this:Node
+    is_a: InternalActiveStructureElement
+    description: A node represents a computational or physical resource that
+      hosts, manipulates, or interacts with other computational or physical
+      resources.
+
+  StructuralRelationship:
+    class_uri: this:StructuralRelationship
+    is_a: Relationship
+    abstract: true
+    description: Models the static construction or composition of concepts of
+      the same or different types.
+
+  DependencyRelationship:
+    class_uri: this:DependencyRelationship
+    is_a: Relationship
+    abstract: true
+    description: Models how elements are used to support other elements.
+
+  RealizationRelationship:
+    class_uri: this:RealizationRelationship
+    is_a: StructuralRelationship
+    description: The realization relationship represents that an element plays
+      a critical role in the creation, achievement, sustenance, or operation of
+      a more abstract element.
+
+  AssignmentRelationship:
+    class_uri: this:AssignmentRelationship
+    is_a: StructuralRelationship
+    description: The assignment relationship represents the allocation of
+      responsibility, performance of behavior, storage, or execution.
+
+  AccessRelationship:
+    class_uri: this:AccessRelationship
+    is_a: DependencyRelationship
+    description: The access relationship represents the ability of behavior and
+      active structure elements to observe or act upon passive structure
+      elements.
+    attributes:
+      type:
+        slot_uri: this:Access.type
+        range: AccessKind
+        required: true
+        multivalued: false
+        description: Type of access relation.
+
+  ServingRelationship:
+    class_uri: this:ServingRelationship
+    is_a: DependencyRelationship
+    description: The serving relationship represents that an element provides
+      its functionality to another element.
+
+  AssociationRelationship:
+    class_uri: this:AssociationRelationship
+    is_a: DependencyRelationship
+    description: An association relationship represents an unspecified
+      relationship, or one that is not represented by another ArchiMate
+      relationship.
+
+  CompositionRelationship:
+    class_uri: this:CompositionRelationship
+    is_a: StructuralRelationship
+    description: The composition relationship represents that an element
+      consists of one or more other concepts.
+
+  AggregationRelationship:
+    class_uri: this:AggregationRelationship
+    is_a: StructuralRelationship
+    description: The aggregation relationship represents that an element
+      combines one or more other concepts.

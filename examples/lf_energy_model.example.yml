@@ -1,0 +1,50 @@
+---
+identifier: 'System Management'
+conforms_to: 'http://data.netbeheernederland.nl/documentation/archimate'
+contact_point: 'ritger.teunissen@alliander.com'
+release_date: '2025-02-10'
+version: 1.0.0
+groupings: []
+capabilities: []
+business_actors: []
+business_roles: []
+business_functions:
+  - name: 'System Management'
+    id: c8f3fdf4-e341-4960-bcb8-5c376179bc04
+  - name: 'Market Signal Generation'
+    id: 0d9446a8-bdd0-4a11-bb25-878523a2b73c
+  - name: 'System Control'
+    id: b809fe36-f3b6-4018-ad5a-ed7edc321146
+  - name: 'Forecasts'
+    id: 449f6076-d92b-4edb-930c-95b6533b5636
+business_processes:
+  - name: 'Power System Calculation'
+    id: 3e6df1e5-c093-41d3-bd96-f9c295414862
+business_objects: []
+application_services: []
+application_functions:
+  - name: 'State Estimation'
+    id: 3fd09583-e2c2-4d96-8691-265907ca9fda
+application_components: []
+data_objects: []
+technology_collaborations: []
+nodes: []
+realization_relationships: []
+assignment_relationships: []
+access_relationships: []
+serving_relationships: []
+association_relationships: []
+composition_relationships: []
+aggregation_relationships:
+  - subject: c8f3fdf4-e341-4960-bcb8-5c376179bc04
+    object: b809fe36-f3b6-4018-ad5a-ed7edc321146
+    id: d4a67c4f-9a04-4589-9df9-42e9bebd8c1c
+  - subject: c8f3fdf4-e341-4960-bcb8-5c376179bc04
+    object: 3e6df1e5-c093-41d3-bd96-f9c295414862
+    id: d68e1fe7-66ac-4242-9b27-0809313feafb
+  - subject: c8f3fdf4-e341-4960-bcb8-5c376179bc04
+    object: 449f6076-d92b-4edb-930c-95b6533b5636
+    id: 1a5450ba-529c-4e7f-924c-f0c8d0fea7f5
+  - subject: 3e6df1e5-c093-41d3-bd96-f9c295414862
+    object: 3fd09583-e2c2-4d96-8691-265907ca9fda
+    id: f52322f4-53e4-44b6-a9ba-76fc02a41119
