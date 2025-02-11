@@ -1,3 +1,49 @@
 = Archimate 3.2 Metamodel
 
-#TODO#.
+ArchiMate is an open standard modeling language for enterprise architecture,
+designed to visualize and describe various aspects of an organization’s
+architecture, such as its business processes, information systems, and
+technology infrastructure. ArchiMate 3.2 is the latest version, providing a
+comprehensive framework that facilitates clear communication among
+stakeholders, enabling better decision-making and alignment with business
+goals. It covers layers like business, application, and technology, along with
+cross-cutting concerns such as motivations and implementation.
+
+Linked Data refers to a method of structuring, interconnecting, and sharing
+data on the web, where information is connected through URIs (Uniform Resource
+Identifiers) and described using standard vocabularies such as RDF (Resource
+Description Framework). By connecting architectural elements in a
+machine-readable way, Linked Data facilitates interoperability and reuse.
+Furthermore, when applied in conjunction with the FAIR (Findable, Accessible,
+Interoperable, and Reusable) principles, it ensures that data is not only
+discoverable and accessible but also structured to support easy integration
+across systems. This enhances the usability of architectural models, making
+them more open, discoverable, and adaptable for various stakeholders and
+systems.
+
+In the context of the architecture-as-code concept, this information model
+integrates these principles, providing a consistent, machine-readable
+representation of the architecture. It links data from various components while
+ensuring it is aligned with FAIR standards, offering improved traceability,
+automation, and easier updates. By doing so, it strengthens organizational
+decision-making and ensures that the enterprise architecture remains agile,
+transparent, and closely aligned with business strategies.
+
+== Concepts
+
+The information model follows the semantics as defined by the Archimate
+https://pubs.opengroup.org/architecture/archimate3-doc/ch-Generic-Metamodel.html[metamodel].
+To create a concrete dataset to represent a specific metamodel, inherit from
+the `Model` class and add attributes for each `Concept` required. The `LFEnergy
+Functional Architecture` metamodel is provided as an example. Note that this
+information model supports serialisation to JSON only.
+
+== Other initiatives
+
+* https://github.com/dgreefhorst/archimate2rdf[archimate2rdf]: a converter for
+  the Archimate XML exchange format to RDF
+
+== Additional schemas
+
+* xref:schema:attachment$schemas/json_schema/im_archimate_metamodel.json_schema.json[JSON schema]
+* xref:schema:attachment$examples/lf_energy_model.example.json[Example JSON instance data]
